@@ -83,14 +83,11 @@ def run_yolo(model_name='yolo_assets/Models/yolov8s-face.pt', source=0,
     class_names = load_class_names(class_path)
     n_classes = len(class_names)
     #  Generating colors for each class
-
     colors = {}
     #  Generate a color palette
     for i in range(n_classes):
         color = tuple((np.array(color_palette('hls', n_classes)) * 255)[i])
-        colors[i] = color
-    # Checking the prediction type
-
+        colors[i] = colo
     # Capturing the video from the source
     cap = cv2.VideoCapture(source)
 
