@@ -27,8 +27,8 @@
 1. clone this repo:
 
    ```
-   git clone https://github.com/wufan-tb/yolo_slowfast
-   cd yolo_slowfast
+   [git clone https://github.com/wufan-tb/yolo_slowfast](https://github.com/OmdenaAI/cairo-egypt-orphanage-well-being.git)
+   cd "Task6 Activity Recognition
    ```
 
 2. create a new python environment (optional):
