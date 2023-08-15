@@ -14,13 +14,20 @@ class orphanageRoles(models.Model):
     created_date = models.DateTimeField(auto_now_add=True,auto_now=False)
     updated_date = models.DateTimeField(auto_now_add=False, auto_now=True)
 
+    def __str__(self):
+        return self.role_name
+
+    class Meta:
+        verbose_name_plural = "Orphanage Roles"
+        db_table = 'orphanage_roles'
+
 # presave implemented with django signals - https://docs.djangoproject.com/en/4.2/topics/signals/
 @receiver(pre_save, sender=orphanageRoles)
-def set_created_updated_by(sender, instance, **kwargs):
+def set_created_updated_by(sender, instance, request=None, **kwargs):
     if not instance.pk:  # New instance
-        instance.created_by = instance.user
+        instance.created_by = request.user if request else None
     else:
-        instance.updated_by = instance.user
+        instance.updated_by = request.user if request else None
 # Orphanage Roles model ends here
 
 # class Rename:

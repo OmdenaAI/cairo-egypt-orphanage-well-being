@@ -15,8 +15,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('userProfile/', include('userProfile.urls', namespace='userProfile')),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Orphanage Admin'
+admin.site.site_title = 'Orphanage Admin'
+admin.site.site_url = 'http://localhost:8000/'
+admin.site.index_title = 'Orphanage Administration'
+admin.site.enable_nav_sidebar = False
+

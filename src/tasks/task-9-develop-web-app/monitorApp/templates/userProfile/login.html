@@ -1,0 +1,32 @@
+{% extends 'base_before_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+
+  <div class="login_blk">
+    <div class="container">
+    <form id="logn_form" name="logn_form" action="{% url 'userProfile:login' %}" class="align-items-center row login_form" method="post" autocomplete="off">{% csrf_token %}
+        <input type="hidden" name="next" value="{{request.GET.next}}">
+        <div class="col-md-12 position-relative">
+          <div class="d-flex align-items-center mb_42">
+            <!-- <img src="{% static 'images/signals.svg' %}" alt="earmark" class="signals-img "> -->
+            <h1 class="mb_0">Omdena Cairo Chapter</h1>
+          </div>
+          <h2 class="font_20 fw-semi mb_9 dark_black"> Sign In </h2>
+          <h6 class="font_13 fw-normal mb_31">to access Orphanage Dashboard</h6>
+          <div class="logininput-field">
+            {{ form.username }}
+          </div>
+          <div class="logininput-field">
+            {{ form.password }}
+            <a href="{% url 'userProfile:password_forgot' %}" class="forget_link">Forgot?</a>
+          </div>
+          <button type="submit" class="btn btn-primary font_16 mb_36 login fw-bold">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+{% endblock %}
+
+

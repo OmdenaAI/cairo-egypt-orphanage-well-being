@@ -1,0 +1,98 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <form class="row login_form p-0" action="{% url 'userProfile:profile' %}" method="post" id="profile_form" name="profile_form" enctype="multipart/form-data">{% csrf_token %}
+        <div class="col-md-3 myprofile-border myprofile_pass_form">
+            <img src="{% if profiledtls.profile_photo %}{{profiledtls.profile_photo.url}}{% else %}{% static '/images/header_profile_icon.png' %}{% endif %}" alt="my-profile-icon" class="my-profile-icon">
+            <div class="mtop_16">
+               <label for="profile_pic" class="drag-drop "><span class="browse-text">Update Profile Picture</span></label>
+               <input type="file" id="profile_pic" class="doc_upload_size" name="profile_pic" accept=".jpg, .png, .jpeg">
+               <h1 class="font_16 fw-bold mtop_16">{{request.user.first_name}} {{request.user.last_name}}</h1>
+            </div>
+
+        </div>
+        <div class="col-md-9 Account-Settings myprofile_pass_form">
+            <h2 class="font_20 fw-semi mb_25 dark_black">Account Settings</h2>
+            <div class="row">
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21">
+                        <label for="">First Name</label>
+                        <input type="Text" class="form-control" value="{{request.user.first_name}}" id="first_name" name="first_name">
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Display Name</label>
+                        <input type="Text" class="form-control" value="{{request.user.first_name}} {{request.user.last_name}}" id="profile_name" name="profile_name">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center mtop_28">
+                        <a class="side-addbutton btn-primary myprofile_submit" >Update</a>
+                        <a class="btn-primary addcolor-cancel side-addbutton ">Cancel</a>
+                    </div>
+                </div>
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21">
+                        <label for="">Last Name</label>
+                        <input type="Text" class="form-control" value="{{request.user.last_name}}" id="last_name" name="last_name">
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Email</label>
+                        <input type="Text" class="form-control" value="{{request.user.email}}" id="email" name="email">
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Date Of Birth</label>
+                        <input type="text" name="dob" value="{% if profiledtls %}{{profiledtls.dob|date:"Y-m-d"}}{% endif %}" id="dob" class="form-control form-date" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+
+{% block custom-js %}
+
+/*** Date Picker ***/
+$(".form-date").datetimepicker({
+    format:'Y-m-d',
+    timepicker:false,
+});
+/*** Date Picker ***/
+
+/*** On click of update button to submit form -starts***/
+$(document.body).on('click',".myprofile_submit",function(){
+    $('#myprofile_form').submit();
+});
+/*** On click of update button to submit form -ends***/
+
+/*** Validation for image upload -starts***/
+$(document.body).on('change',"#profile_pic",function(){
+    var fileSize = this.files[0];
+    var sizeInMb = fileSize.size/1024;
+    var sizeLimit= 1024*2;
+    var selected_file = $('#profile_pic').val();
+    selected_file = selected_file.substring(selected_file.lastIndexOf("\\") + 1, selected_file.length);
+    var fileExtension = ['png','jpg','svg'];
+
+    if (sizeInMb > sizeLimit) {
+       $("#img_size-error").remove();
+       $('#profile_pic').after('<label for="" id="img_size-error" class="img_error error">Size should not exceed 2mb.</label>');
+       this.value = none;
+       return false;
+    } else if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+       $("#img_type-error").remove();
+       $('#profile_pic').after('<label for="" id="img_type-error" class="img_error error">Type should be png / jpg / svg.</label>');
+       this.value = none;
+       return false;
+    } else {
+        $('.img_error').remove();
+        $('.selected_file').remove();
+        $('#profile_pic').after('<label class="selected_file">'+ selected_file +'</label>');
+    }
+});
+/*** Validation for image upload -ends***/
+
+{% endblock %}
