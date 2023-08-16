@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.contrib.auth import login, logout, update_session_auth_hash
-from userProfile.forms import LoginForm, CustomPasswordChangeForm, PasswordResetFormUnique
+from userProfile.forms import LoginForm, CustomPasswordChangeForm, PasswordResetFormUnique, UserRegisterForm
 from userProfile.custom_authentication import EmailAuthBackend
 from userProfile.models import orphanageRoles, Profile
 from django.http import HttpResponseRedirect
@@ -33,10 +33,12 @@ def login_view(request):
                 if user.is_superuser and user.is_staff:
                     return HttpResponseRedirect(reverse_lazy('admin:index'))
                 else:
-                    if next:
+                    if Profile.objects.filter(user_id=user.id).exists():
+                        return HttpResponseRedirect(reverse_lazy('userProfile:profile'))
+                    elif next:
                         return HttpResponseRedirect(next)
                     else:
-                        return HttpResponseRedirect(reverse_lazy('userProfile:profile'))
+                        return HttpResponseRedirect(reverse_lazy('mlpipeline:dashboard'))
             else:
                 message = _("Invalid User ID or Password")
         else:
@@ -80,7 +82,6 @@ def password_forgot(request):
                                                                      'succes_msg':succes_msg,})
     if request.method == 'POST':
         form = PasswordResetFormUnique(request.POST)
-        print(form)
         if form.is_valid():
             response = auth_views.PasswordResetView.as_view(
                 form_class=PasswordResetFormUnique,
@@ -107,7 +108,6 @@ def password_forgot(request):
 def profile(request):
     user_id = request.user.id
     roles = orphanageRoles.objects.all()
-    print(roles)
     if request.method == 'GET':
         try:
             profiledtls = Profile.objects.get(user_id=user_id)
@@ -137,3 +137,21 @@ def profile(request):
     return HttpResponseRedirect(reverse_lazy('dashboard:dashboard'))
 
 """Edit Profile functionality. - Ends"""
+
+"""Sign Up View - starts"""
+def signup_view(request):
+    if request.method == 'GET':
+        signup_form = UserRegisterForm()
+        return render(request, 'userProfile/signup.html', {'signup_form':signup_form})
+    elif request.method == 'POST':
+        signup_form = UserRegisterForm(request.POST)
+        if signup_form.is_valid():
+            user = signup_form.save()
+            message = _("Your account has been created! Please log in using your credentials.")
+            return HttpResponseRedirect(reverse_lazy('userProfile:login'))
+        else:
+            message = _('There was an error in the registration form. Please correct the errors.')
+        return render(request, 'userProfile/signup.html', { 'signup_form': signup_form,
+                                                            'message':message
+                                                            })
+"""Sign Up View - ends"""

@@ -73,5 +73,43 @@ $( document ).ready(function() {
     });
 // validation for forgot Password ends here
 
+// validation for create user starts here
+    validator = $("#signup_form").validate({
+        rules: {
+            email: {
+                required: true,
+                email: true,
+            },
+            username: {
+                required: true,
+            },
+             new_password1: {
+                required: true,
+                minlength: 8,
+             },
+            new_password2: {
+                required: true,
+                equalTo : '#newpassword1'
+            },
+        },
+        messages: {
+            email: {
+                required: "Email is required",
+            },
+            username: {
+                required: "This field is required"
+            },
+            new_password1: {
+                required: "New Password is required",
+                minlength: "Password should be atleast 8 characters",
+             },
+            new_password2: {
+                required: "Confirm Password is required",
+                equalTo : "Confirm Password should be same as New Password."
+            },
+        },
+    });
+// validation for forgot Password ends here
+
 });
 

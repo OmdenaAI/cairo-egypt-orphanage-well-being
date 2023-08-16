@@ -6,6 +6,7 @@ from userProfile.forms import CustomSetPasswordForm
 app_name = 'userProfile'
 
 urlpatterns = [
+    path('signup/', userProfile_views.signup_view, name="signup"),
     path('login/', userProfile_views.login_view, name="login"),
     path('logout/', userProfile_views.logout_view, name="logout"),
     path('change_password/', userProfile_views.change_password, name="change_password"),

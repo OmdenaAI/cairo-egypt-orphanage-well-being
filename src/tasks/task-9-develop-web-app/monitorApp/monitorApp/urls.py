@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('mlpipeline.urls', namespace='mlpipeline')),
     path('admin/', admin.site.urls),
     path('userProfile/', include('userProfile.urls', namespace='userProfile')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
