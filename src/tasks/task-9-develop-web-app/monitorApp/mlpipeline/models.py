@@ -53,6 +53,7 @@ class Activity(models.Model):
 class Detection(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, verbose_name="Profile")
     profile_name = models.CharField(max_length=128, verbose_name="Profile Name")
+    profile_role = models.CharField(max_length=128, verbose_name='Profile Role')
     camera = models.ForeignKey(Camera, on_delete=models.CASCADE, verbose_name="Camera")
     mood = models.ForeignKey(Mood, on_delete=models.CASCADE)
     mood_name = models.CharField(max_length=128, verbose_name="Profile Name")
@@ -71,5 +72,6 @@ class Detection(models.Model):
 @receiver(pre_save, sender=Detection)
 def update_profile_name(sender, instance, **kwargs):
     instance.profile_name = instance.profile.profile_name
+    instance.profile_role = instance.profile.role.role_name
     instance.mood_name = instance.mood.mood
     instance.activity_name = instance.activity.activity
