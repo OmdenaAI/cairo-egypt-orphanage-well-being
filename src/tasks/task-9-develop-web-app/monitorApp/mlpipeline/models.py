@@ -21,43 +21,13 @@ class Camera(models.Model):
     class Meta:
         verbose_name_plural = "Cameras"
 
-# Mood model
-class Mood(models.Model):
-    mood = models.CharField(max_length=128, verbose_name="Mood Name")
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="moods_created_by")
-    updated_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="moods_updated_by")
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.mood
-
-    class Meta:
-        verbose_name_plural = "Moods"
-
-# Activity model
-class Activity(models.Model):
-    activity = models.CharField(max_length=128, verbose_name="Activity Name")
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="activities_created_by")
-    updated_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="activities_updated_by")
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.activity
-
-    class Meta:
-        verbose_name_plural = "Activities"
-
 # Detection model
 class Detection(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, verbose_name="Profile")
     profile_name = models.CharField(max_length=128, verbose_name="Profile Name")
     profile_role = models.CharField(max_length=128, verbose_name='Profile Role')
     camera = models.ForeignKey(Camera, on_delete=models.CASCADE, verbose_name="Camera")
-    mood = models.ForeignKey(Mood, on_delete=models.CASCADE)
     mood_name = models.CharField(max_length=128, verbose_name="Profile Name")
-    activity = models.ForeignKey(Activity, on_delete=models.CASCADE)
     activity_name = models.CharField(max_length=128, verbose_name="Profile Name")
     reference_video = models.CharField(max_length=128, blank=True, null=True, verbose_name="Reference Video")
     recorded_date = models.DateTimeField()
@@ -73,5 +43,3 @@ class Detection(models.Model):
 def update_profile_name(sender, instance, **kwargs):
     instance.profile_name = instance.profile.profile_name
     instance.profile_role = instance.profile.role.role_name
-    instance.mood_name = instance.mood.mood
-    instance.activity_name = instance.activity.activity
