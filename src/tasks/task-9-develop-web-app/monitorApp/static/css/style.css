@@ -81,10 +81,6 @@ a {
     height: 100%;
     box-shadow: 0px 3px 6px #0000000d;
 }
-.page_container {
-    width: calc(100% - 230px);
-    margin-left: 230px;
-}
 .logo_con {
     padding: 27px 18px 40px 18px;
 }
@@ -158,7 +154,7 @@ header {
     padding: 17.5px 23px;
 }
 .page_body {
-    padding: 30px 35px;
+    padding: 30px 0px;
 }
 .dashboard_menu {
     width: calc(100% + 18px);
@@ -648,7 +644,7 @@ body .dataset_form .form-control {
     height: 10px;
     margin: 0;
 }
-.switch input { 
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -840,7 +836,7 @@ td.lorem-text {
     border-collapse: collapse;
     width: 100%;
   }
-  
+
  .metadata_subtable>td {
     border: 1px solid #dddddd;
     text-align: left;
@@ -936,7 +932,7 @@ table.metadata_subtable>tbody>tr {
 }
 input#quantity {
     text-align: center;
-    
+
     border-radius: 0px;
 }
 table thead.orga_thead tr th>div>h6 {
@@ -1197,7 +1193,7 @@ tr.name_fn {
 .grey-section {
     background-color: #F3F7FD;
     padding: 20px 28px 28.5px 23px;
-    
+
 }
 .grey-section .form-group {
     margin-bottom: 13px;
@@ -1309,7 +1305,7 @@ a.forget_link {
     font-size: 13px;
     font-weight: 400;
     text-decoration: underline;
-    line-height: 16px;    
+    line-height: 16px;
 }
 .login_form .btn-primary {
     width: 100%;
@@ -1357,7 +1353,7 @@ a.forget_link {
     border-radius: 50%;
     display: inline-block;
     background-color: #FF543E;
-    position: absolute; 
+    position: absolute;
     top: 0px;
     left: 0px;
 }
@@ -1911,7 +1907,7 @@ img.outlineimg {
     background-repeat: no-repeat;
     background-position: calc(100% - 10px);
     padding-right: 20px;
-    
+
 }
   .form-checkborder .form-check-input:checked {
     background-color: #fff;
@@ -1939,7 +1935,7 @@ img.outlineimg {
 /***************** workflow css - Ends *********************/
 /* The radio */
 .radio {
- 
+
     display: block;
    position: relative;
    padding-left: 30px;
@@ -1976,7 +1972,7 @@ img.outlineimg {
 
 /* When the radio button is checked, add a blue background */
 .radio input:checked ~ .checkround {
-   
+
    border: 2px solid #2CA323;
 }
 
@@ -2004,7 +2000,7 @@ img.outlineimg {
 .radio-label>div {
     align-items: flex-start;
     cursor: pointer;
-}   
+}
 .form-check.add-border>label {
     opacity: 52%;
     margin-bottom: 0px;
@@ -2700,7 +2696,7 @@ td.question-menu {
     border-top: 1px solid #C6CEDD !important;
     border-radius: 0px 0px 4px 4px;
     border-width: 1px 0px 0px 0px;
-    
+
 }
 .right-arrow {
     margin-left: 21px;
@@ -2968,7 +2964,7 @@ input.action-check.active {
 }
 .addcolor-cancel:hover {
     color: #15111E !important;
-    
+
 }
 .hide-employeedata {
     min-height: 857px !important;

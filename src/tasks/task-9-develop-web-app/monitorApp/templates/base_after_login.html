@@ -14,95 +14,40 @@
 
     <div class="page">
         <!-- sidemenu HTML -->
-        <div class="sidemenu_div white_bg">
-            <div class="logo_con d-flex align-items-center">
-                <h2 class="pl_9 page_heading m-0">Orphanage Portal</h2>
-            </div>
 
-            <!-- menu list HTML -->
-            <ul class="sidemenu_ul">
-                <li>
-                    <a href="#" class="d-flex align-items-center {% block dashboard %}{% endblock %}">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11.439" height="11.439"
-                                viewBox="0 0 11.439 11.439">
-                                <g id="Icon_feather-grid" data-name="Icon feather-grid"
-                                    transform="translate(-4.5 -4.5)">
-                                    <path id="Path_1" data-name="Path 1" d="M4.5,4.5H8.948V8.948H4.5Z" fill="#15111E" />
-                                    <path id="Path_2" data-name="Path 2" d="M21,4.5h4.448V8.948H21Z"
-                                        transform="translate(-9.51)" fill="#15111E" />
-                                    <path id="Path_3" data-name="Path 3" d="M21,21h4.448v4.448H21Z"
-                                        transform="translate(-9.51 -9.51)" fill="#15111E" />
-                                    <path id="Path_4" data-name="Path 4" d="M4.5,21H8.948v4.448H4.5Z"
-                                        transform="translate(0 -9.51)" fill="#15111E" />
-                                </g>
-                            </svg>
-                        </span>
-                        <span class="text">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center {% block organisation %}{% endblock %}">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14.625" viewBox="0 0 12 14.625">
-                                <g id="Icon_feather-clipboard" data-name="Icon feather-clipboard"
-                                    transform="translate(-5.25 -2.25)">
-                                    <path id="Path_25" data-name="Path 25"
-                                        d="M13.875,6h1.313A1.313,1.313,0,0,1,16.5,7.313V16.5a1.313,1.313,0,0,1-1.312,1.313H7.313A1.313,1.313,0,0,1,6,16.5V7.313A1.313,1.313,0,0,1,7.313,6H8.625"
-                                        transform="translate(0 -1.688)" fill="none" stroke="#15111E"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                                    <path id="Path_26" data-name="Path 26"
-                                        d="M12.656,3h3.938a.656.656,0,0,1,.656.656V4.969a.656.656,0,0,1-.656.656H12.656A.656.656,0,0,1,12,4.969V3.656A.656.656,0,0,1,12.656,3Z"
-                                        transform="translate(-3.375)" fill="none" stroke="#15111E"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                                </g>
-                            </svg>
-                        </span>
-                        <span class="text">Management</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- menu list HTML  Ends -->
-        </div>
         <!-- sidemenu HTML - Ends -->
         <div class="page_container">
             <!-- header HTML -->
             <header class="white_bg">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h1 class="page_heading m-0">{% block page_heading_text %}{% endblock %}</h1>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="d-flex align-items-center justify-content-end">
-                                <li class="ml_20">
-                                    <a href="#" class="d-flex position-relative">
-                                        <img src="{% static '/images/notification_icon.svg' %}" alt="notification_icon"
-                                            class="img-fluid">
-                                        <span class="count"></span>
-                                    </a>
-                                </li>
-                                <li class="dropdown ml_20">
-                                    <div class="profile_blk cursor-pointer d-flex align-items-center"
-                                        data-bs-toggle="dropdown" aria-labelledby="profileDropdown">
-                                        <img src="{% static '/images/header_profile_icon.png' %}" alt="header_profile_icon"
-                                            class="img-fluid profile_img">
-                                        <span class="profile_name d-block text_black font_13 fw-semi">{{request.user.first_name}} {{request.user.last_name}}</span>
-                                        <img src="{% static '/images/pro_drop_down.svg' %}" alt="pro_drop_down" class="img-fluid">
-                                    </div>
-                                    <ul class="dropdown-menu" id="profileDropdown">
-                                        <li class="dropdown-item"><a href="{% url 'userProfile:profile' %}">My Profile</a>
-                                        </li>
-                                        <li class="dropdown-item"><a href="{% url 'userProfile:change_password' %}">Change Password</a>
-                                        </li>
-                                        <li class="dropdown-item"><a href="{% url 'userProfile:logout' %}">Logout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="">
+                        <img src="{% static 'images/logo.svg' %}" height="30" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" href="#RisenLevelUp">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" href="">Change Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" href="#Gallery">Log Out</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center"
+                                    data-bs-toggle="dropdown" aria-labelledby="profileDropdown">
+                                    <img src="{% static '/images/header_profile_icon.png' %}" alt="header_profile_icon"
+                                        class="img-fluid profile_img">
+                                    <span class="profile_name d-block text_black font_13 fw-semi">{{request.user.first_name}} {{request.user.last_name}}</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
             </header>
             <!-- header HTML - Ends -->
         <div class="page_body">

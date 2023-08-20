@@ -101,4 +101,23 @@ Before you dive in, ensure you have the following tools installed and ready:
 
 You can create more accounts here [http://127.0.0.1:8000/userProfile/signup/](http://127.0.0.1:8000/userProfile/signup/)
 
+## Completed pages
+
+1. ` / ` - Dashboard
+
+2. ` admin/ ` - admin page for superusers
+
+3. ` userProfile/signup ` - create user account
+
+4. ` userProfile/login ` - login functionality
+
+5. ` userProfile/logout ` - logout functionality
+
+6. ` userProfile/change_password ` - change password once logged in
+
+7. ` userProfile/password_forgot ` - forgot password
+
+8. ` userProfile/profile ` - CRUD Profile
+
+
 Happy coding and may your code be bug-free! 🚀
