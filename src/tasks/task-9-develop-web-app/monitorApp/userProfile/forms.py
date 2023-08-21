@@ -69,3 +69,9 @@ class UserRegisterForm(UserCreationForm):
         if User.objects.filter(email=email).exists():
             raise forms.ValidationError(_("Email address already linked to an account"))
         return cleaned_data
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.email = self.cleaned_data['email']  # Save the email field
+        if commit:
+            user.save()
+        return user

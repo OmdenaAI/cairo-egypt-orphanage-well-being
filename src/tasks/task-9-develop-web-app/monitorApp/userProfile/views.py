@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.conf import settings
 from django.contrib.auth import login, logout, update_session_auth_hash
 from userProfile.forms import LoginForm, CustomPasswordChangeForm, PasswordResetFormUnique, UserRegisterForm
@@ -9,8 +9,29 @@ from django.urls.base import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import views as auth_views
+from django.contrib.auth.models import User
+
+from django.contrib import messages
 
 # Create your views here.
+
+"""Sign Up View - starts"""
+def signup_view(request):
+    if request.method == 'GET':
+        signup_form = UserRegisterForm()
+        return render(request, 'userProfile/signup.html', {'signup_form':signup_form})
+    elif request.method == 'POST':
+        signup_form = UserRegisterForm(request.POST)
+        if signup_form.is_valid():
+            user = signup_form.save()
+            message = _("Your account has been created! Please log in using your credentials.")
+            return HttpResponseRedirect(reverse_lazy('userProfile:login'))
+        else:
+            message = _('There was an error in the registration form. Please correct the errors.')
+        return render(request, 'userProfile/signup.html', { 'signup_form': signup_form,
+                                                            'message':message
+                                                            })
+"""Sign Up View - ends"""
 
 """Login Functionality - starts"""
 def login_view(request):
@@ -30,15 +51,15 @@ def login_view(request):
             user = obj_auth.authenticate(username=request.POST.get('username'),password=request.POST.get('password') , request=request)
             if user is not None:
                 login(request, user, backend=AUTH_BACKEND)
-                if user.is_superuser and user.is_staff:
-                    return HttpResponseRedirect(reverse_lazy('admin:index'))
+                # if user.is_superuser and user.is_staff:
+                #     return HttpResponseRedirect(reverse_lazy('admin:index'))
+                # else:
+                if not Profile.objects.filter(user_id=user.id).exists():
+                    return HttpResponseRedirect(reverse_lazy('userProfile:profile'))
+                elif next:
+                    return HttpResponseRedirect(next)
                 else:
-                    if Profile.objects.filter(user_id=user.id).exists():
-                        return HttpResponseRedirect(reverse_lazy('userProfile:profile'))
-                    elif next:
-                        return HttpResponseRedirect(next)
-                    else:
-                        return HttpResponseRedirect(reverse_lazy('mlpipeline:dashboard'))
+                    return HttpResponseRedirect(reverse_lazy('mlpipeline:dashboard'))
             else:
                 message = _("Invalid User ID or Password")
         else:
@@ -105,53 +126,92 @@ def password_forgot(request):
 
 """My Profile functionality. - Starts"""
 @login_required
-def profile(request):
+def profile(request, profile_id=None):
     user_id = request.user.id
     roles = orphanageRoles.objects.all()
     if request.method == 'GET':
-        try:
-            profiledtls = Profile.objects.get(user_id=user_id)
-        except:
-            profiledtls = None
+        if profile_id:
+            try:
+                profiledtls = Profile.objects.get(id=profile_id)
+                user_create = 1 if profiledtls.user and profiledtls.user.id == user_id else 0
+            except Exception as e:
+                print(e)
+        else:
+            user_create = 1
+            try:
+                profiledtls = Profile.objects.get(user_id=user_id)
+            except:
+                profiledtls = None
         return render(request, 'userProfile/profile.html' , {
                                                             'profiledtls':profiledtls,
+                                                            'roles':roles,
+                                                            'user_create':user_create,
                                                               })
     if request.method == 'POST':
-        User.objects.filter(id = user_id).update(first_name=request.POST.get('first_name'),
-                                              last_name=request.POST.get('last_name'),
-                                              email=request.POST.get('email'),
-                                               )
-        if not Profile.objects.filter(user_id=user_id).exists():
-            profile = Profile.objects.create(user_id = user_id,
-                                        primary_mobile_no = request.POST.get('mobile'),
-                                           )
+        if request.POST.get('role') == '#' and request.POST.get('new_role'):
+            role = orphanageRoles.objects.create(role_name=request.POST.get('new_role'))
         else:
-            profile = Profile.objects.get(user_id=user_id)
-        #For Update profile- start
-        if profile:
-            if request.FILES.get('profile_pic'):
-                profile.profile_photo=request.FILES.get('profile_pic')
-            profile.primary_mobile_no = request.POST.get('mobile')
-            profile.save()
+            try:
+                role = orphanageRoles.objects.get(id=request.POST.get('role'))
+            except Exception as e:
+                print(e)
+        role_id = role.id
+        if request.POST.get('user_create'):
+            User.objects.filter(id = user_id).update(first_name=request.POST.get('first_name'),
+                                                    last_name=request.POST.get('last_name'),
+                                                    email=request.POST.get('email'),
+                                                   )
+            if not Profile.objects.filter(user_id=user_id).exists():
+                profile = Profile.objects.create(   user_id = user_id,
+                                                    profile_name = request.POST.get('first_name')+' '+request.POST.get('last_name'),
+                                                    role_id = role_id,
+                                                    dob = request.POST.get('dob')
+                                                )
+            else:
+                profile = Profile.objects.get(user_id=user_id)
+                profile.profile_name = request.POST.get('first_name')+' '+request.POST.get('last_name')
+                profile.role_id = role_id
+                profile.dob = request.POST.get('dob')
+
         #For Update profile- end
-    return HttpResponseRedirect(reverse_lazy('dashboard:dashboard'))
+        else:
+            profile = Profile.objects.create(
+                                            profile_name = request.POST.get('profile_name'),
+                                            role_id = role_id,
+                                            dob = request.POST.get('dob')
+                )
+        if profile:
+            if request.FILES.get('profile_pic1'):
+                profile.profile_photo1=request.FILES.get('profile_pic1')
+            if request.FILES.get('profile_pic2'):
+                profile.profile_photo2=request.FILES.get('profile_pic2')
+            if request.FILES.get('profile_pic3'):
+                profile.profile_photo3=request.FILES.get('profile_pic3')
+            profile.save()
+    return HttpResponseRedirect(reverse_lazy('mlpipeline:dashboard'))
 
 """Edit Profile functionality. - Ends"""
 
-"""Sign Up View - starts"""
-def signup_view(request):
+"""Create New Profile - Starts"""
+@login_required
+def new_profile(request):
+    roles = orphanageRoles.objects.all()
     if request.method == 'GET':
-        signup_form = UserRegisterForm()
-        return render(request, 'userProfile/signup.html', {'signup_form':signup_form})
-    elif request.method == 'POST':
-        signup_form = UserRegisterForm(request.POST)
-        if signup_form.is_valid():
-            user = signup_form.save()
-            message = _("Your account has been created! Please log in using your credentials.")
-            return HttpResponseRedirect(reverse_lazy('userProfile:login'))
-        else:
-            message = _('There was an error in the registration form. Please correct the errors.')
-        return render(request, 'userProfile/signup.html', { 'signup_form': signup_form,
-                                                            'message':message
-                                                            })
-"""Sign Up View - ends"""
+        return render(request, 'userProfile/profile.html', {'roles':roles})
+"""Create New Profile - Ends"""
+
+"""Show all Profiles - Starts"""
+def all_profiles(request):
+    profiles = Profile.objects.all()
+    return render(request, 'userProfile/all_profiles.html', {'profiles':profiles})
+"""Show all Profiles - Ends"""
+
+"""Delete Profile - Starts"""
+@login_required
+def delete_profile(request, profile_id):
+    profile = get_object_or_404(Profile, pk=profile_id)
+    if request.user.is_superuser:
+        profile.delete()
+        messages.success(request, 'Profile deleted successfully.')
+    return HttpResponseRedirect(reverse_lazy('userProfile:all_profiles'))
+"""Delete Profile - Ends"""

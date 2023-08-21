@@ -1,0 +1,41 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <div class="row">
+        {% for profile in profiles %}
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <div class="profile-text">
+                        <div class="profile-name">{{profile.profile_name}}</div>
+                        <div class="profile-dob">Date of Birth: {{profile.dob|date:"d-m-Y"}}</div>
+                        <div class="profile-role">Role: {{profile.role.role_name}}</div>
+                    </div>
+                    {% if request.user.is_superuser %}
+                        <div class="profile-icons">
+                            <button class="btn btn-link edit-btn" onclick="window.location = '{% url 'userProfile:profile_with_id' profile.id %}'">
+                                <img src="{% static 'images/edit-button.svg' %}" alt="Edit">
+                            </button>
+                            <button class="btn btn-link delete-btn" onclick="window.location = '{% url 'userProfile:delete_profile' profile.id %}'">
+                                <img src="{% static 'images/delete-button.svg' %}" alt="Delete">
+                            </button>
+                        </div>
+                    {% endif %}
+                    <div class="profile-photos">
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" id="thumbnail1" alt="Thumbnail Preview" {% if profile.profile_photo1 %}src="{{profile.profile_photo1.url}}"{% else %}src="#" style="display:none;"{% endif %}>
+                        </div>
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" id="thumbnail2" alt="Thumbnail Preview" {% if profile.profile_photo2 %}src="{{profile.profile_photo2.url}}"{% else %}src="#" style="display:none;"{% endif %}>
+                        </div>
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" id="thumbnail3" alt="Thumbnail Preview" {% if profile.profile_photo3 %}src="{{profile.profile_photo3.url}}"{% else %}src="#" style="display:none;"{% endif %}>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

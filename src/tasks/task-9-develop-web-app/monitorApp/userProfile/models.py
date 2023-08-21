@@ -35,7 +35,7 @@ class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="User Id", blank=True, null=True)
     profile_name = models.CharField(max_length=250,verbose_name="Profile Name")
     role = models.ForeignKey(orphanageRoles, on_delete=models.CASCADE, verbose_name="Orphanage Roles Id")
-    dob = models.DateTimeField()
+    dob = models.DateField()
     profile_photo1 = models.ImageField(upload_to='profile_photo/', blank=True, null=True, verbose_name="Profile Photo 1")
     profile_photo2 = models.ImageField(upload_to='profile_photo/', blank=True, null=True, verbose_name="Profile Photo 2")
     profile_photo3 = models.ImageField(upload_to='profile_photo/', blank=True, null=True, verbose_name="Profile Photo 3")

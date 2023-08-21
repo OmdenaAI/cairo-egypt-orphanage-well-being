@@ -21,28 +21,36 @@
             <header class="white_bg">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <a class="navbar-brand" href="">
-                        <img src="{% static 'images/logo.svg' %}" height="30" alt="">
+                        <img src="{% static 'images/omdena.jpeg' %}" height="30" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-item nav-link" href="#RisenLevelUp">Dashboard</a>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:all_profiles' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">All Profiles</span>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-item nav-link" href="">Change Password</a>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'mlpipeline:dashboard' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">Dashboard</span>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-item nav-link" href="#Gallery">Log Out</a>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:change_password' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">Change Password</span>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <div class="profile_blk cursor-pointer d-flex align-items-center"
-                                    data-bs-toggle="dropdown" aria-labelledby="profileDropdown">
-                                    <img src="{% static '/images/header_profile_icon.png' %}" alt="header_profile_icon"
-                                        class="img-fluid profile_img">
-                                    <span class="profile_name d-block text_black font_13 fw-semi">{{request.user.first_name}} {{request.user.last_name}}</span>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:logout' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">Logout</span>
+                                </div>
+                            </li>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:profile' %}'">
+                                    <span class="profile_name d-flex text_black font_13 fw-semi">{{request.user.first_name}} {{request.user.last_name}}</span>
                                 </div>
                             </li>
                         </ul>

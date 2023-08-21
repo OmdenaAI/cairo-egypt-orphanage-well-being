@@ -3254,13 +3254,98 @@ body .form-control:disabled, body .form-control[readonly] {
 /************************* css changes on 30-09-2022 - Ends *******************************/
 
 /***** hide input element for profile picture update ******/
-input#profile_pic {
+input.profile_pic {
     display: none;
 }
 /***** hide input element for profile picture update ******/
+
 
 /***** error messages in red ******/
 label.error {
       color: #fb3737 !important;
    }
 /***** error messages in red ******/
+
+.thumbnail-container {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Profiles list css */
+.profile-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.profile-content {
+    flex: 1; /* Take remaining vertical space */
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.profile-dob {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.profile-role {
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.profile-icons img {
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+}
+
+.profile-photos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto; /* Push images to the bottom */
+}
+
+/* Other styles (profile-name, profile-dob, profile-role) */
+/* Profiles list css */

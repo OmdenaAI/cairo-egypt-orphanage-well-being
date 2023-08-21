@@ -20,5 +20,9 @@ urlpatterns = [
                                                 template_name='userProfile/password_reset_complete.html'
                                                 ), name='password_reset_complete'),
     path('profile/', userProfile_views.profile, name='profile'),
+    path('profile/<int:profile_id>/', userProfile_views.profile, name='profile_with_id'),
+    path('new_profile/', userProfile_views.new_profile, name='new_profile'),
+    path('all_profiles/', userProfile_views.all_profiles, name='all_profiles'),
+    path('delete_profile/<int:profile_id>/', userProfile_views.delete_profile, name='delete_profile')
     ]
 
