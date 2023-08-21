@@ -4,6 +4,9 @@
 {% block content %}
 <div class="page_body">
     <div class="row">
+        <div class="col-11 justify-content-end d-flex">
+            <button type="button" class="btn btn-primary font_16 fw-bold" onclick="window.location='{% url 'userProfile:new_profile' %}'">New Profile</button>
+        </div>
         {% for profile in profiles %}
             <div class="col-md-4">
                 <div class="profile-card">

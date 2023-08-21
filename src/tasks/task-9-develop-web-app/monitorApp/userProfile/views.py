@@ -17,6 +17,8 @@ from django.contrib import messages
 
 """Sign Up View - starts"""
 def signup_view(request):
+    if request.user.is_authenticated:
+        logout(request)
     if request.method == 'GET':
         signup_form = UserRegisterForm()
         return render(request, 'userProfile/signup.html', {'signup_form':signup_form})
@@ -188,6 +190,8 @@ def profile(request, profile_id=None):
             if request.FILES.get('profile_pic3'):
                 profile.profile_photo3=request.FILES.get('profile_pic3')
             profile.save()
+        if not request.POST.get('user_create'):
+            return HttpResponseRedirect(reverse_lazy('userProfile:all_profiles'))
     return HttpResponseRedirect(reverse_lazy('mlpipeline:dashboard'))
 
 """Edit Profile functionality. - Ends"""

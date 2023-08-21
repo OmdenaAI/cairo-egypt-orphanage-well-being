@@ -7,8 +7,8 @@
         <input type="hidden" name="user_create" value="{{user_create}}">
         <div class="col-md-3 myprofile-border myprofile_pass_form">
             <div class="mtop_16">
-                {% if profiledtls %}
-                <h1 class="font_16 fw-bold mtop_16">{{request.user.first_name}} {{request.user.last_name}}</h1>
+                {% if user_create == 1 %}
+                    <h1 class="font_16 fw-bold mtop_16">{{request.user.first_name}} {{request.user.last_name}}</h1>
                 {% endif %}
                 <label for="profile_pic1" class="drag-drop mt-4"><span class="browse-text">Update Profile Picture 1</span></label>
                 <input type="file" class="profile_pic" id="profile_pic1" name="profile_pic1" accept=".png, .jpg, .svg">
@@ -42,7 +42,8 @@
                     <div class="logininput-field mb_21">
                         <label for="">Display Name</label>
                         <input type="Text" class="form-control" id="profile_name" name="profile_name" placeholder="Enter Name"
-                        {% if user_create %}value="{{request.user.first_name}} {{request.user.last_name}}" disabled{% endif %}>
+                        {% if user_create %}value="{{request.user.first_name}} {{request.user.last_name}}"disabled{% else %}
+                        value="{{profiledtls.profile_name}}"{% endif %}>
                     </div>
                     <div class="logininput-field mb_21">
                         <label for="">Select Role</label>
