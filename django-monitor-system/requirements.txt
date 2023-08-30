@@ -1,9 +1,0 @@
-django
-django-cleanup
-django-object-actions
-django-user-agents
-dlib
-face-recognition
-imutils
-opencv-python
-psycopg2
