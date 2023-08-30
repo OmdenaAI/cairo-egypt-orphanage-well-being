@@ -7,7 +7,7 @@ from userProfile.models import Profile
 
 # Camera model
 class Camera(models.Model):
-    camera_number = models.CharField(max_length=128, verbose_name="Camera Number")
+    camera_ip = models.CharField(max_length=128, verbose_name="Camera Number")
     room_details = models.CharField(max_length=128, verbose_name="Room Details")
     connected = models.BooleanField(default=False, verbose_name="Connected")
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="cameras_created_by")

@@ -3349,3 +3349,9 @@ label.error {
 
 /* Other styles (profile-name, profile-dob, profile-role) */
 /* Profiles list css */
+
+/* Add this to your existing CSS or create a new CSS file */
+.livecamera {
+    max-width: 100%; /* Set maximum width to 100% of its parent container */
+    height: auto;    /* Maintain aspect ratio and adjust height automatically */
+}

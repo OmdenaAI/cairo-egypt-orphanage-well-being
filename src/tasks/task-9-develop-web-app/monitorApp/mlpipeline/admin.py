@@ -7,8 +7,8 @@ from .models import Camera, Detection
 
 # Camera admin
 class CameraAdmin(admin.ModelAdmin):
-    list_display = ('camera_number', 'room_details', 'connected')
-    search_fields = ('camera_number', 'room_details')
+    list_display = ('camera_ip', 'room_details', 'connected')
+    search_fields = ('camera_ip', 'room_details')
 
 # Detection admin
 class DetectionAdmin(admin.ModelAdmin):

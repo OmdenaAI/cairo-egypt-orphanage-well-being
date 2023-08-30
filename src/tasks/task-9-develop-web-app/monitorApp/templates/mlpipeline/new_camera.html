@@ -1,0 +1,75 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <form class="row login_form p-0" action="{% url 'mlpipeline:new_camera' %}" method="post" id="camera_form" name="camera_form">{% csrf_token %}
+        <div class="Account-Settings myprofile_pass_form">
+            <h2 class="font_20 fw-semi mb_25 dark_black">Account Settings</h2>
+            <div class="row">
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21">
+                        <label for="">Camera IP</label>
+                        <input type="text" class="form-control" id="camera_ip" name="camera_ip" placeholder="Enter Camera IP Address">
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Connected</label>
+                        <select disabled class="form-control" name="connected" id="connected">
+                            <option selected value="0">Not Connected</option>
+                            <option value="1">Connected</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21 new_role_div">
+                        <label for="">Room Details</label>
+                        <input type="text" name="room_details" placeholder="Enter Room Details" id="room_details" class="form-control" autocomplete="off">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center mtop_28">
+                        <a class="side-addbutton btn-primary camera_connect" >Connect</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <img src="" id="livecamera" class="livecamera">
+                </div>
+                <div class="col-md-6 d-flex align-items-center mtop_28">
+                    <a class="side-addbutton btn-primary camera_submit" >{% if profiledtls %}Update{% else %}Create{% endif %}</a>
+                    <a class="btn-primary addcolor-cancel side-addbutton ">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+
+{% block custom-js %}
+
+
+/*** On click of update button to submit form -starts***/
+$(document.body).on('click',".camera_submit",function(){
+    $('#camera_form').submit();
+});
+/*** On click of update button to submit form -ends***/
+
+/*** On click connect ***/
+
+$(document.body).on('click',".camera_connect",function(){
+    const cameraip = $('#camera_ip').val();
+    const encoded_url = encodeURIComponent(cameraip);
+    const urlWithQueryParam = "{% url 'mlpipeline:livecamera' %}?url=" + encoded_url;  // Adjust the URL structure as needed
+    $('#livecamera').attr('src', urlWithQueryParam);
+    setTimeout(function() {
+        console.log($('#livecamera').files.length);
+        if ($('#livecamera').files && $('#livecamera').files.length > 0) {
+            alert("yess");
+        } else {
+            alert("sad");
+        }
+    }, 1000);
+
+});
+/*** On click connect ***/
+
+{% endblock %}
