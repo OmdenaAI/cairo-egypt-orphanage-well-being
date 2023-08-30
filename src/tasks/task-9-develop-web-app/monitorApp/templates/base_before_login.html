@@ -1,0 +1,38 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "cssfiles.html" %}
+    <title>ADWAITA</title>
+</head>
+
+<body>
+    {% if message %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>{{message}}</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+    {% include "jsfiles.html" %}
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        {% block custom-js %}
+        {% endblock %}
+
+    });
+</script>
+</html>
+
+
+
+

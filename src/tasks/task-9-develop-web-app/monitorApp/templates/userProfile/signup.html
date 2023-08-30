@@ -1,0 +1,41 @@
+{% extends 'base_before_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+
+  <div class="login_blk">
+    <div class="container">
+    <form id="signup_form" name="signup_form" action="{% url 'userProfile:signup' %}" class="align-items-center row login_form" method="post" autocomplete="off">{% csrf_token %}
+        <input type="hidden" name="next" value="{{request.GET.next}}">
+        <div class="col-md-12 position-relative">
+          <div class="d-flex align-items-center mb_42">
+            <!-- <img src="{% static 'images/signals.svg' %}" alt="earmark" class="signals-img "> -->
+            <h1 class="mb_0">Omdena Cairo Chapter</h1>
+          </div>
+          <h2 class="font_20 fw-semi mb_9 dark_black"> Sign Up </h2>
+          <h6 class="font_13 fw-normal mb_31">to access Orphanage Dashboard</h6>
+          <div class="logininput-field">
+            {{ signup_form.email }}
+          {% if signup_form.email.errors %}<label id="email-error" class="errorlist error email_err" for="email" style="list-style: none;">{{ signup_form.email.errors }}</label>{% endif %}
+          </div>
+          <div class="logininput-field">
+            {{ signup_form.username }}
+          {% if signup_form.username.errors %}<label id="username-error" class="errorlist error username_err" for="username" style="list-style: none;">{{ signup_form.username.errors }}</label>{% endif %}
+          </div>
+          <div class="logininput-field">
+            {{ signup_form.password1 }}
+          {% if signup_form.password1.errors %}<label id="password1-error" class="errorlist error password1_err" for="password1" style="list-style: none;">{{ signup_form.password1.errors }}</label>{% endif %}
+          </div>
+          <div class="logininput-field">
+            {{ signup_form.password2 }}
+          {% if signup_form.password2.errors %}<label id="password2-error" class="errorlist error password2_err" for="password2" style="list-style: none;">{{ signup_form.password2.errors }}</label>{% endif %}
+          </div>
+          <button type="submit" class="btn btn-primary font_16 mb_36 login fw-bold">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+{% endblock %}
+
+

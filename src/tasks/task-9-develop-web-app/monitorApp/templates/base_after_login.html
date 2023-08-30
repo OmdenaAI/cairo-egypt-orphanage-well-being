@@ -1,0 +1,96 @@
+{% load i18n static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omdena Cairo</title>
+    {% include "cssfiles.html" %}
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- sidemenu HTML -->
+
+        <!-- sidemenu HTML - Ends -->
+        <div class="page_container">
+            <!-- header HTML -->
+            <header class="white_bg">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="">
+                        <img src="{% static 'images/omdena.jpeg' %}" height="30" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:all_profiles' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">All Profiles</span>
+                                </div>
+                            </li>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'mlpipeline:dashboard' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">Dashboard</span>
+                                </div>
+                            </li>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:change_password' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">Change Password</span>
+                                </div>
+                            </li>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:logout' %}'">
+                                    <span class="profile_name d-flex text_black font_13 ">Logout</span>
+                                </div>
+                            </li>
+                            <li class="nav-item justify-content-center align-items-center d-flex">
+                                <div class="profile_blk cursor-pointer d-flex align-items-center justify-content-between" onclick="window.location='{% url 'userProfile:profile' %}'">
+                                    <span class="profile_name d-flex text_black font_13 fw-semi">{{request.user.first_name}} {{request.user.last_name}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- header HTML - Ends -->
+        <div class="page_body">
+        <!-- main HTML -->
+            {% block content %}
+            {% endblock %}
+        <!-- main HTML - Ends  -->
+        </div>
+        </div>
+    </div>
+{% include "jsfiles.html" %}
+</body>
+
+<!-- Popup to show success msg  (Start) -->
+<div id="succs_succ" class="modal yes_no_popup">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body v_height_auto">
+               <div class="d-flex align-items-center justify-content-between">
+                    <p class="m-0 font_14 text_black fw-normal pr_15" id="change_msg"></p>
+                     <button class="link1 close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+               </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Popup to show success msg (End) -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        {% block custom-js %}
+        {% endblock %}
+    });
+</script>
+</html>
+
