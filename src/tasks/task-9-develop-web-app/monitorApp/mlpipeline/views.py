@@ -1,11 +1,16 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from mlpipeline.models import Camera
+from mlpipeline.models import Camera, ScriptExecutions
 import cv2
 from mlpipeline.stream import *
 from django.views.decorators import gzip
-from django.http import StreamingHttpResponse
+from django.http import StreamingHttpResponse, HttpResponseRedirect
 from urllib.parse import unquote
+from django.urls.base import reverse_lazy
+from datetime import datetime
+import os
+from django.conf import settings
+import subprocess
 
 # Create your views here.
 
@@ -37,3 +42,32 @@ def livecamera(request):
         return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
     except:  # This is bad!
         pass
+
+@login_required
+def mlscript(request):
+    executions = ScriptExecutions.objects.all().order_by('-exec_start_time').values()
+    return render(request, 'mlpipeline/mlscript.html',{'executions':executions})
+
+@login_required
+def start_script(request):
+    execution = ScriptExecutions.objects.last()
+    if execution.exec_status == 'Running':
+        execution.exec_status = "Stop"
+        execution.exec_stop_time = datetime.now()
+    ScriptExecutions.objects.create(exec_status="Running")
+    try:
+        working_directory = os.path.join(settings.BASE_DIR, "mlscript")
+        command = ["python","yolo_slowfast.py", "--input", "0", "--device", "cpu"]
+        subprocess.Popen(command, cwd=working_directory)
+    except Exception as e:
+        print(e)
+    return HttpResponseRedirect(reverse_lazy('mlpipeline:mlscript'))
+
+@login_required
+def stop_script(request):
+    execution = ScriptExecutions.objects.last()
+    if execution.exec_status == "Running":
+        execution.exec_status = "Stop"
+        execution.exec_stop_time = datetime.now()
+        execution.save()
+    return HttpResponseRedirect(reverse_lazy('mlpipeline:mlscript'))

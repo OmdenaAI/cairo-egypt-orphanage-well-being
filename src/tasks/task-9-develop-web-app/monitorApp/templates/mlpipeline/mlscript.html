@@ -1,0 +1,29 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 justify-content-start d-flex">
+                <h6>Script started at {{executions.first.exec_start_time|date:"H:iA - d/m/Y"}} is currently {{executions.first.exec_status}}</h6>
+            </div>
+            <div class="col-12 justify-content-start d-flex">
+                <button type="button" class="btn btn-primary font_16 fw-bold m-3" onclick="window.location='{% url 'mlpipeline:start_script' %}'">Start Script</button>
+                <button type="button" class="btn btn-primary font_16 fw-bold m-3" onclick="window.location='{% url 'mlpipeline:stop_script' %}'">Stop Script</button>
+            </div>
+            {% for execution in executions %}
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-text">
+                            <div class="profile-name">Execution Status: {{execution.exec_status}}</div>
+                            <div class="profile-dob">Execution Start Time: {{execution.exec_start_time|date:"H:iA - d/m/Y"}}</div>
+                            <div class="profile-role">Execution Stop Time: {{execution.exec_stop_time|date:"H:iA - d/m/Y"}}</div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

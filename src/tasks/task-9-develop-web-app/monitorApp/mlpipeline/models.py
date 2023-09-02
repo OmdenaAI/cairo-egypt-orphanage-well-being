@@ -38,8 +38,19 @@ class Detection(models.Model):
     class Meta:
         verbose_name_plural = "Detections"
 
-# Signal to update profile_name, mood_name, activity_name in Detection model based on profile
+# Signal to update profile_name, profile_role in Detection model based on profile
 @receiver(pre_save, sender=Detection)
 def update_profile_name(sender, instance, **kwargs):
     instance.profile_name = instance.profile.profile_name
     instance.profile_role = instance.profile.role.role_name
+
+class ScriptExecutions(models.Model):
+    exec_start_time = models.DateTimeField(auto_now_add=True,auto_now=False)
+    exec_status = models.CharField(max_length=128, verbose_name="Script Execution Status")
+    exec_stop_time = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return f"Script started {self.exec_start_time} is currently {self.exec_status}"
+
+    class Meta:
+        verbose_name_plural = "Script Executions"

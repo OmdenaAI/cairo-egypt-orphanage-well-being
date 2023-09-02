@@ -131,3 +131,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore slowfast checkpoints
+ckpt.t7
+*.mp4
+yolov5l6.pt
