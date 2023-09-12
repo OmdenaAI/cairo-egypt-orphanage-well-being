@@ -10,32 +10,23 @@
         {% for camera in cameras %}
             <div class="col-md-4">
                 <div class="profile-card">
-                    <div class="profile-text">
-                        <div class="profile-name">Camera IP: {{camera.camera_ip}}</div>
-                        <div class="profile-dob">Room Details: {{camera.room_details}}</div>
-                        <div class="profile-role">Connected: {{camera.connected}}</div>
+                    <div class="container">
+                        <div class="profile-text">
+                            <div class="">Camera IP: {{camera.camera_ip}}</div>
+                            <div class="profile-dob">Room Details: {{camera.room_details}}</div>
+                            <div class="profile-role">Connected: {{camera.connected}}</div>
+                        </div>
                     </div>
                     {% if request.user.is_superuser %}
                         <div class="profile-icons">
                             <button class="btn btn-link edit-btn" onclick="window.location = '#'">
                                 <img src="{% static 'images/edit-button.svg' %}" alt="Edit">
                             </button>
-                            <button class="btn btn-link delete-btn" onclick="window.location = '#'">
+                            <button class="btn btn-link delete-btn" onclick="window.location = '{% url 'mlpipeline:delete_camera' camera.id %}'">
                                 <img src="{% static 'images/delete-button.svg' %}" alt="Delete">
                             </button>
                         </div>
                     {% endif %}
-                    <!-- <div class="profile-photos">
-                        <div class="thumbnail-container">
-                            <img class="thumbnail" id="thumbnail1" alt="Thumbnail Preview" {% if profile.profile_photo1 %}src="{{profile.profile_photo1.url}}"{% else %}src="#" style="display:none;"{% endif %}>
-                        </div>
-                        <div class="thumbnail-container">
-                            <img class="thumbnail" id="thumbnail2" alt="Thumbnail Preview" {% if profile.profile_photo2 %}src="{{profile.profile_photo2.url}}"{% else %}src="#" style="display:none;"{% endif %}>
-                        </div>
-                        <div class="thumbnail-container">
-                            <img class="thumbnail" id="thumbnail3" alt="Thumbnail Preview" {% if profile.profile_photo3 %}src="{{profile.profile_photo3.url}}"{% else %}src="#" style="display:none;"{% endif %}>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         {% endfor %}

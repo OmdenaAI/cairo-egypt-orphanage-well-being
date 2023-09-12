@@ -47,29 +47,64 @@
 {% block custom-js %}
 
 
+/**** Check input fields ****/
+function validateDetails() {
+  const roomDetailsValue = $('#room_details').val();
+  const cameraIpValue = $('#camera_ip').val();
+
+  if (cameraIpValue == '') {
+    $('#cameraip-error').remove();
+    $('#camera_ip').after(`<label id="cameraip-error" class="error" for="camera_ip">This field is required</label>`);
+    return false;
+  } else {
+    $('#cameraip-error').remove();
+  }
+  if (roomDetailsValue == '') {
+    $('#room_details-error').remove();
+    $('#room_details').after(`<label id="room_details-error" class="error" for="room_details">This field is required</label>`);
+    return false;
+  } else {
+    $('#room_details-error').remove();
+  }
+  return true;
+}
+/**** Check input fields ****/
+
 /*** On click of update button to submit form -starts***/
 $(document.body).on('click',".camera_submit",function(){
+    if (validateDetails() == false){
+        return;
+    }
+    if ($('#connected').val() == 0){
+        alert("Camera Error")
+    } else {
+        $('#connected').prop('disabled', false);
+    }
     $('#camera_form').submit();
 });
 /*** On click of update button to submit form -ends***/
 
 /*** On click connect ***/
 
-$(document.body).on('click',".camera_connect",function(){
-    const cameraip = $('#camera_ip').val();
-    const encoded_url = encodeURIComponent(cameraip);
-    const urlWithQueryParam = "{% url 'mlpipeline:livecamera' %}?url=" + encoded_url;  // Adjust the URL structure as needed
-    $('#livecamera').attr('src', urlWithQueryParam);
-    setTimeout(function() {
-        console.log($('#livecamera').files.length);
-        if ($('#livecamera').files && $('#livecamera').files.length > 0) {
-            alert("yess");
-        } else {
-            alert("sad");
-        }
-    }, 1000);
+$(document.body).on('click', '.camera_connect', async function () {
 
+  if (validateDetails() == false){
+    return;
+  }
+
+  const cameraip = $('#camera_ip').val();
+  const encoded_url = encodeURIComponent(cameraip);
+  const urlWithQueryParam = "{% url 'mlpipeline:livecamera' %}?url=" + encoded_url;  // Adjust the URL structure as needed
+  $('#livecamera').attr('src', urlWithQueryParam);
+
+  // Ensure that the image has loaded before attempting to access its properties
+  $('#livecamera').on('load', function () {
+     if (this.naturalWidth != 0 ) {
+        $('#connected').val(1);
+     }
+  });
 });
+
 /*** On click connect ***/
 
 {% endblock %}

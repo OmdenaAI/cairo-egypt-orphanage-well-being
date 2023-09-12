@@ -7,6 +7,7 @@ urlpatterns = [
     path('', mlpipeline_views.dashboard, name="dashboard"),
     path('cameras/', mlpipeline_views.cameras, name="cameras"),
     path('new_camera/', mlpipeline_views.new_camera, name="new_camera"),
+    path('delete_camera/<int:camera_id>/', mlpipeline_views.delete_camera, name='delete_camera'),
     path('livecamera/',mlpipeline_views.livecamera, name="livecamera"),
 
     path('mlscript/', mlpipeline_views.mlscript, name="mlscript"),

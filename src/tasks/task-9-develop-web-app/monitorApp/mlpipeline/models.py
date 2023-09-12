@@ -16,7 +16,7 @@ class Camera(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.camera_number
+        return self.room_details
 
     class Meta:
         verbose_name_plural = "Cameras"
@@ -48,6 +48,7 @@ class ScriptExecutions(models.Model):
     exec_start_time = models.DateTimeField(auto_now_add=True,auto_now=False)
     exec_status = models.CharField(max_length=128, verbose_name="Script Execution Status")
     exec_stop_time = models.DateTimeField(blank=True, null=True)
+    exec_camera = models.ForeignKey(Camera, on_delete=models.SET_NULL, null=True, related_name="Camera")
 
     def __str__(self):
         return f"Script started {self.exec_start_time} is currently {self.exec_status}"

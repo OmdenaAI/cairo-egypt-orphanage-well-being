@@ -21,10 +21,6 @@ from deep_sort.deep_sort import DeepSort
 # Suppress UserWarnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
-running = True
-processing = False
-
-
 class MyVideoCapture:
     """Custom video capture class."""
 
@@ -207,12 +203,12 @@ def main(config):
     ava_labelnames, _ = AvaLabeledVideoFramePaths.read_label_map("selfutils/temp.pbtxt")
     coco_color_map = [[random.randint(0, 255) for _ in range(3)] for _ in range(80)]
 
-    vide_save_path = config.output
+    video_save_path = config.output
     video = cv2.VideoCapture(config.input)
 
     width, height = int(video.get(3)), int(video.get(4))
     video.release()
-    outputvideo = cv2.VideoWriter(vide_save_path, cv2.VideoWriter_fourcc(*'mp4v'), 25, (width, height))
+    outputvideo = cv2.VideoWriter(video_save_path, cv2.VideoWriter_fourcc(*'mp4v'), 25, (width, height))
     print("processing...")
 
     cap = MyVideoCapture(config.input)
@@ -248,7 +244,6 @@ def main(config):
             print(f"frame number - {len(cap.stack)}")
 
             if len(cap.stack) == 25:
-                processing = True
                 print(f"processing {cap.idx // 25}th second clips")
                 clip = cap.get_video_clip()
                 if yolo_preds.pred[0].shape[0]:
@@ -269,7 +264,7 @@ def main(config):
             sql_result = cursor.fetchone()
 
     except Exception as e:
-        print(e)
+        print("Script Error:", e)
     finally:
         if cursor:
             cursor.close()
@@ -279,8 +274,7 @@ def main(config):
 
     cap.release()
     outputvideo.release()
-    processing = False
-    print('saved video to:', vide_save_path)
+    print('saved video to:', video_save_path)
 
 
 if __name__ == "__main__":
