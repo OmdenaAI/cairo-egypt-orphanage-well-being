@@ -59,6 +59,13 @@
                         <a class="side-addbutton btn-primary profile_submit" >{% if profiledtls %}Update{% else %}Create{% endif %}</a>
                         <a class="btn-primary addcolor-cancel side-addbutton ">Cancel</a>
                     </div>
+                    <div class="col-md-6">
+                        <h3 class="font_13 fw-normal mtop_28">Current State: </h3>
+                        {% for state in current_state %}
+                        <h1 class="font_16 fw-bold">{{state.mood_name}}</h1>
+                        <h1 class="font_16 fw-bold">{{state.activity_name}}</h1>
+                        {% endfor %}
+                    </div>
                 </div>
                 <div class="col-md-6 info-inputfield">
                     {% if user_create %}
@@ -81,10 +88,35 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </form>
+    <div class="container m-5">
+        <form action="{% url 'userProfile:profile' %}" method="GET">{%csrf_token%}
+        <div class="row">
+            <div class="col-md-3">
+               <label for="">Select Camera</label>
+                <select class="form-control" name="camera" id="camera">
+                    <option value=""> Select Camera </option>
+                    {% for camera in cameras %}
+                        <option value="{{camera.id}}" {% if camera_id == camera.id %}selected{% endif %}>{{camera.room_details}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <canvas id="moodChart"></canvas>
+            </div>
+            <div class="col-12">
+                <canvas id="activityChart"></canvas>
+            </div>
+        </div>
+
+    </div>
 </div>
 {% endblock %}
 
@@ -150,5 +182,53 @@ $(document.body).on('change', ".profile_pic", function () {
     }
 });
 /*** Validation for image upload -ends***/
+
+
+
+/******** Mood Chart *********/
+// Get the canvas element by its id
+var ctx = document.getElementById('moodChart').getContext('2d');
+
+// Define your data and configuration
+var data = {
+labels: [{% for mood in mood_detections%}'{{mood.mood_name}}',{% endfor %}],
+datasets: [{
+  label: 'Mood Board',
+  data: [{% for mood in mood_detections%}'{{mood.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var config = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: data,
+};
+
+// Create the chart
+var moodChart = new Chart(ctx, config);
+
+
+/***** Activity Chart *****/
+// Get the canvas element by its id
+var ctxActivityChart = document.getElementById('activityChart').getContext('2d');
+
+// Define your data and configuration
+var dataActivityChart = {
+labels: [{% for activity in activity_detections%}'{{activity.activity_name}}',{% endfor %}],
+datasets: [{
+  label: 'Activity Board',
+  data: [{% for activity in activity_detections%}'{{activity.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var configActivityChart = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: dataActivityChart,
+};
+
+// Create the chart
+var activityChart = new Chart(ctxActivityChart, configActivityChart);
+
 
 {% endblock %}

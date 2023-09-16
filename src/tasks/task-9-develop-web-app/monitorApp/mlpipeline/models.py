@@ -24,8 +24,8 @@ class Camera(models.Model):
 # Detection model
 class Detection(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, verbose_name="Profile")
-    profile_name = models.CharField(max_length=128, verbose_name="Profile Name")
-    profile_role = models.CharField(max_length=128, verbose_name='Profile Role')
+    # profile_name = models.CharField(max_length=128, verbose_name="Profile Name")
+    # profile_role = models.CharField(max_length=128, verbose_name='Profile Role')
     camera = models.ForeignKey(Camera, on_delete=models.CASCADE, verbose_name="Camera")
     mood_name = models.CharField(max_length=128, verbose_name="Profile Name")
     activity_name = models.CharField(max_length=128, verbose_name="Profile Name")
@@ -33,7 +33,7 @@ class Detection(models.Model):
     recorded_date = models.DateTimeField()
 
     def __str__(self):
-        return f"{self.profile_name} - {self.recorded_date}"
+        return f"{self.profile.profile_name} - {self.recorded_date}"
 
     class Meta:
         verbose_name_plural = "Detections"

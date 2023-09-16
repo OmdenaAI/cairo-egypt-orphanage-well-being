@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from mlpipeline.models import Camera, ScriptExecutions
+from mlpipeline.models import Camera, ScriptExecutions, Detection
+from userProfile.models import orphanageRoles
 import cv2
 from mlpipeline.stream import *
 from django.views.decorators import gzip
@@ -11,6 +12,7 @@ from datetime import datetime
 import os
 from django.conf import settings
 import subprocess
+from django.db.models import Count, Max, F, Subquery, OuterRef, DateTimeField
 
 from django.contrib import messages
 
@@ -19,7 +21,34 @@ from django.contrib import messages
 #Dashboard as home page
 @login_required
 def dashboard(request):
-    return render(request, 'mlpipeline/dashboard.html')
+    search_data={}
+    cameras = Camera.objects.filter(connected=True).values('id','room_details')
+    roles = orphanageRoles.objects.all()
+    if request.GET.get('camera'):
+        search_data['camera_id'] = request.GET.get('camera')
+    if request.GET.get('role'):
+        search_data['profile__role_id'] = request.GET.get('role')
+    camera_id = int(search_data['camera_id']) if 'camera_id' in search_data.keys() else None
+    role_id = int(search_data['profile__role_id']) if 'profile__role_id' in search_data.keys() else None
+    data_type = request.GET.get('data_type')
+    if request.GET.get('data_type') == '0':
+        mood_detections = Detection.objects.filter(**search_data).values('mood_name').annotate(counts=Count('mood_name'))
+        activity_detections = Detection.objects.filter(**search_data).values('activity_name').annotate(counts=Count('activity_name'))
+    else:
+        # Create a subquery to find the latest recorded_date for each camera
+        latest_recorded_dates = Detection.objects.filter(
+            camera_id=OuterRef('camera_id')
+        ).order_by('-recorded_date').values('recorded_date')[:1]
+
+        # Use the subquery in the main query to retrieve the mood vs. count for the last recorded date for each specific camera
+        mood_detections = Detection.objects.filter(**search_data,recorded_date=Subquery(latest_recorded_dates),
+                    ).values('mood_name').annotate(counts=Count('mood_name')).order_by('mood_name')
+
+        activity_detections = Detection.objects.filter(**search_data,recorded_date=Subquery(latest_recorded_dates),
+                    ).values('activity_name').annotate(counts=Count('activity_name')).order_by('activity_name')
+    return render(request, 'mlpipeline/dashboard.html', {'mood_detections':mood_detections,'activity_detections':activity_detections,
+                                                                'cameras':cameras,'roles':roles,
+                                                                'camera_id':camera_id,'role_id':role_id,'data_type':data_type})
 
 #list all connected cameras
 @login_required
