@@ -63,12 +63,23 @@ def cameras(request):
 @login_required
 def new_camera(request, *args, **kwargs):
     if request.method == 'POST':
-        print(request.POST.get('connected'))
         Camera.objects.create(camera_ip = request.POST.get('camera_ip'),
                             room_details = request.POST.get('room_details'),
                             connected = request.POST.get('connected'))
         return HttpResponseRedirect(reverse_lazy('mlpipeline:cameras'))
     return render(request, 'mlpipeline/new_camera.html')
+
+#edit camera
+@login_required
+def edit_camera(request, camera_id, *args, **kwargs):
+    if request.method == 'POST':
+        Camera.objects.filter(id=camera_id).update(camera_ip = request.POST.get('camera_ip'),
+                            room_details = request.POST.get('room_details'),
+                            connected = request.POST.get('connected'))
+        return HttpResponseRedirect(reverse_lazy('mlpipeline:cameras'))
+    else:
+        camera = get_object_or_404(Camera, pk=camera_id)
+        return render(request, 'mlpipeline/new_camera.html',{'camera':camera})
 
 """Delete Camera - Starts"""
 @login_required
@@ -97,7 +108,7 @@ def mlscript(request):
 
 @login_required
 def start_script(request):
-    cameras = Camera.objects.all()
+    cameras = Camera.objects.filter(connected=True)
     time_now = datetime.now()
     for camera in cameras:
         execution = ScriptExecutions.objects.filter(exec_camera=camera).last()
@@ -117,4 +128,9 @@ def start_script(request):
 @login_required
 def stop_script(request):
     ScriptExecutions.objects.filter(exec_status = "Running").update(exec_status = "Stop", exec_stop_time = datetime.now())
+    return HttpResponseRedirect(reverse_lazy('mlpipeline:mlscript'))
+
+@login_required
+def stop_script_at(request, execution_id):
+    ScriptExecutions.objects.filter(id = execution_id).update(exec_status = "Stop", exec_stop_time = datetime.now())
     return HttpResponseRedirect(reverse_lazy('mlpipeline:mlscript'))

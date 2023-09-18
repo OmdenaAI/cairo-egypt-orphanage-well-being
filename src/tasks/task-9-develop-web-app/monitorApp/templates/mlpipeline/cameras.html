@@ -19,7 +19,7 @@
                     </div>
                     {% if request.user.is_superuser %}
                         <div class="profile-icons">
-                            <button class="btn btn-link edit-btn" onclick="window.location = '#'">
+                            <button class="btn btn-link edit-btn" onclick="window.location = '{% url 'mlpipeline:edit_camera' camera.id %}'">
                                 <img src="{% static 'images/edit-button.svg' %}" alt="Edit">
                             </button>
                             <button class="btn btn-link delete-btn" onclick="window.location = '{% url 'mlpipeline:delete_camera' camera.id %}'">

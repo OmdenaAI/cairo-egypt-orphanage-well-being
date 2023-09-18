@@ -10,13 +10,13 @@
                 <div class="col-md-6 info-inputfield">
                     <div class="logininput-field mb_21">
                         <label for="">Camera IP</label>
-                        <input type="text" class="form-control" id="camera_ip" name="camera_ip" placeholder="Enter Camera IP Address">
+                        <input type="text" class="form-control" id="camera_ip" name="camera_ip" placeholder="Enter Camera IP Address" {% if camera %}value="{{camera.camera_ip}}"{% endif %}>
                     </div>
                     <div class="logininput-field mb_21">
                         <label for="">Connected</label>
-                        <select disabled class="form-control" name="connected" id="connected">
-                            <option selected value="0">Not Connected</option>
-                            <option value="1">Connected</option>
+                        <select {% if not camera %}disabled{% endif %} class="form-control" name="connected" id="connected">
+                            <option {% if camera.connected == 0 %}selected{% endif %} value="0">Not Connected</option>
+                            <option {% if camera.connected == 1 %}selected{% endif %} value="1">Connected</option>
                         </select>
                     </div>
 
@@ -24,7 +24,7 @@
                 <div class="col-md-6 info-inputfield">
                     <div class="logininput-field mb_21 new_role_div">
                         <label for="">Room Details</label>
-                        <input type="text" name="room_details" placeholder="Enter Room Details" id="room_details" class="form-control" autocomplete="off">
+                        <input type="text" name="room_details" placeholder="Enter Room Details" id="room_details" class="form-control" autocomplete="off" {% if camera %}value="{{camera.room_details}}"{% endif %}>
                     </div>
                     <div class="col-md-6 d-flex align-items-center justify-content-center mtop_28">
                         <a class="side-addbutton btn-primary camera_connect" >Connect</a>
