@@ -18,6 +18,6 @@ Note : Please Follow the below guidelines to create task folders
 | 5       | Design Dashboard          | Create a user-friendly dashboard for monitoring and managing the human detection and tracking system in real-time. |
 | 6       | Activity Recognition System | Develop an activity recognition system to identify and track specific activities performed by individuals in real-time. |
 | 7       | Mood Detection System     | Design a mood detection system using AI algorithms to assess and track the emotional states of individuals in real-time. |
-| 8       | Integrate all Components  | Integrate all system components to create a comprehensive human detection and tracking solution with seamless operation. |
-| 9       | Build Web Application     | Create a web-based application for easy access and control of the human detection and tracking system in real-time. |
+| 8       | Integrate all Components  | Integrate the system components and verify their seamless operation. |
+| 9       | Build Web Application     | Create a web-based application for easy access and control of the system in real-time. |
 
