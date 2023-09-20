@@ -1,0 +1,110 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <form class="row login_form p-0" action="{% url 'mlpipeline:new_camera' %}" method="post" id="camera_form" name="camera_form">{% csrf_token %}
+        <div class="Account-Settings myprofile_pass_form">
+            <h2 class="font_20 fw-semi mb_25 dark_black">Account Settings</h2>
+            <div class="row">
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21">
+                        <label for="">Camera IP</label>
+                        <input type="text" class="form-control" id="camera_ip" name="camera_ip" placeholder="Enter Camera IP Address" {% if camera %}value="{{camera.camera_ip}}"{% endif %}>
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Connected</label>
+                        <select {% if not camera %}disabled{% endif %} class="form-control" name="connected" id="connected">
+                            <option {% if camera.connected == 0 %}selected{% endif %} value="0">Not Connected</option>
+                            <option {% if camera.connected == 1 %}selected{% endif %} value="1">Connected</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21 new_role_div">
+                        <label for="">Room Details</label>
+                        <input type="text" name="room_details" placeholder="Enter Room Details" id="room_details" class="form-control" autocomplete="off" {% if camera %}value="{{camera.room_details}}"{% endif %}>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center mtop_28">
+                        <a class="side-addbutton btn-primary camera_connect" >Connect</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <img src="" id="livecamera" class="livecamera">
+                </div>
+                <div class="col-md-6 d-flex align-items-center mtop_28">
+                    <a class="side-addbutton btn-primary camera_submit" >{% if profiledtls %}Update{% else %}Create{% endif %}</a>
+                    <a class="btn-primary addcolor-cancel side-addbutton ">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+
+{% block custom-js %}
+
+
+/**** Check input fields ****/
+function validateDetails() {
+  const roomDetailsValue = $('#room_details').val();
+  const cameraIpValue = $('#camera_ip').val();
+
+  if (cameraIpValue == '') {
+    $('#cameraip-error').remove();
+    $('#camera_ip').after(`<label id="cameraip-error" class="error" for="camera_ip">This field is required</label>`);
+    return false;
+  } else {
+    $('#cameraip-error').remove();
+  }
+  if (roomDetailsValue == '') {
+    $('#room_details-error').remove();
+    $('#room_details').after(`<label id="room_details-error" class="error" for="room_details">This field is required</label>`);
+    return false;
+  } else {
+    $('#room_details-error').remove();
+  }
+  return true;
+}
+/**** Check input fields ****/
+
+/*** On click of update button to submit form -starts***/
+$(document.body).on('click',".camera_submit",function(){
+    if (validateDetails() == false){
+        return;
+    }
+    if ($('#connected').val() == 0){
+        alert("Camera Error")
+    } else {
+        $('#connected').prop('disabled', false);
+    }
+    $('#camera_form').submit();
+});
+/*** On click of update button to submit form -ends***/
+
+/*** On click connect ***/
+
+$(document.body).on('click', '.camera_connect', async function () {
+
+  if (validateDetails() == false){
+    return;
+  }
+
+  const cameraip = $('#camera_ip').val();
+  const encoded_url = encodeURIComponent(cameraip);
+  const urlWithQueryParam = "{% url 'mlpipeline:livecamera' %}?url=" + encoded_url;  // Adjust the URL structure as needed
+  $('#livecamera').attr('src', urlWithQueryParam);
+
+  // Ensure that the image has loaded before attempting to access its properties
+  $('#livecamera').on('load', function () {
+     if (this.naturalWidth != 0 ) {
+        $('#connected').val(1);
+     }
+  });
+});
+
+/*** On click connect ***/
+
+{% endblock %}

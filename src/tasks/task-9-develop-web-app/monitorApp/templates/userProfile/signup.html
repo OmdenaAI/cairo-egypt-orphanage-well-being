@@ -31,6 +31,7 @@
           {% if signup_form.password2.errors %}<label id="password2-error" class="errorlist error password2_err" for="password2" style="list-style: none;">{{ signup_form.password2.errors }}</label>{% endif %}
           </div>
           <button type="submit" class="btn btn-primary font_16 mb_36 login fw-bold">Sign Up</button>
+          <button type="button" class="btn btn-secondary font_16 mt-2 login fw-normal" onclick="window.location='{% url 'userProfile:login' %}'">Sign In</button>            
         </div>
       </form>
     </div>

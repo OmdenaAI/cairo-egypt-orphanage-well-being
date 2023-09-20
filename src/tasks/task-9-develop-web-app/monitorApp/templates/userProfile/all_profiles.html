@@ -11,7 +11,7 @@
             <div class="col-md-4">
                 <div class="profile-card">
                     <div class="profile-text">
-                        <div class="profile-name">{{profile.profile_name}}</div>
+                        <a href="{% url 'userProfile:profile_with_id' profile.id %}" class=""><div class="profile-name">{{profile.profile_name}}</div></a>
                         <div class="profile-dob">Date of Birth: {{profile.dob|date:"d-m-Y"}}</div>
                         <div class="profile-role">Role: {{profile.role.role_name}}</div>
                     </div>

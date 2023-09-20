@@ -1,0 +1,29 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <form class="row login_form p-0" action="{% url 'mlpipeline:new_camera' %}" method="post" id="camera_form" name="camera_form">{% csrf_token %}
+        <div class="Account-Settings myprofile_pass_form">
+            <h2 class="font_20 fw-semi mb_25 dark_black">Account Settings</h2>
+            <div class="row">
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21">
+                        <label for="">Camera IP</label>
+                        <input type="text" class="form-control" id="camera_ip" name="camera_ip" placeholder="Enter Camera IP Address" {% if camera %}value="{{camera.camera_ip}}"{% endif %}>
+                    </div>
+                </div>
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21 new_role_div">
+                        <label for="">Room Details</label>
+                        <input type="text" name="room_details" placeholder="Enter Room Details" id="room_details" class="form-control" autocomplete="off" {% if camera %}value="{{camera.room_details}}"{% endif %}>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <img src="{% url 'mlpipeline:view_result' camera.id %}" id="livecamera" class="livecamera">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

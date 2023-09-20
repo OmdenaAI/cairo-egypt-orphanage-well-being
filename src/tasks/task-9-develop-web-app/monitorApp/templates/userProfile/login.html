@@ -22,6 +22,7 @@
             <a href="{% url 'userProfile:password_forgot' %}" class="forget_link">Forgot?</a>
           </div>
           <button type="submit" class="btn btn-primary font_16 mb_36 login fw-bold">Sign In</button>
+          <button type="button" class="btn btn-secondary font_16 mt-2 login fw-normal" onclick="window.location='{% url 'userProfile:signup' %}'">Create Account</button>       
         </div>
       </form>
     </div>

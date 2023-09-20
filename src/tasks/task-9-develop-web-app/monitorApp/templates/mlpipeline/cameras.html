@@ -1,0 +1,35 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <div class="row">
+        <div class="col-11 justify-content-end d-flex">
+            <button type="button" class="btn btn-primary font_16 fw-bold" onclick="window.location='{% url 'mlpipeline:new_camera' %}'">New Camera</button>
+        </div>
+        {% for camera in cameras %}
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <div class="container">
+                        <div class="profile-text">
+                            <div class="">Camera IP: {{camera.camera_ip}}</div>
+                            <div class="profile-dob">Room Details: {{camera.room_details}}</div>
+                            <div class="profile-role">Connected: {{camera.connected}}</div>
+                        </div>
+                    </div>
+                    {% if request.user.is_superuser %}
+                        <div class="profile-icons">
+                            <button class="btn btn-link edit-btn" onclick="window.location = '{% url 'mlpipeline:edit_camera' camera.id %}'">
+                                <img src="{% static 'images/edit-button.svg' %}" alt="Edit">
+                            </button>
+                            <button class="btn btn-link delete-btn" onclick="window.location = '{% url 'mlpipeline:delete_camera' camera.id %}'">
+                                <img src="{% static 'images/delete-button.svg' %}" alt="Delete">
+                            </button>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

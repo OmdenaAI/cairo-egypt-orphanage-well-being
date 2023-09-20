@@ -4,11 +4,108 @@
 
 {% block content %}
 <div class="page_body">
-    <div class='tableauPlaceholder' id='viz1692023988886' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2S&#47;2SWJ4Q6JX&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;2SWJ4Q6JX' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2S&#47;2SWJ4Q6JX&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1692023988886');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1280px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1280px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='1777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="container">
+        <form action="{% url 'mlpipeline:dashboard' %}" method="GET">{%csrf_token%}
+        <div class="row">
+            <div class="col-md-3">
+               <label for="">Select Camera</label>
+                <select class="form-control" name="camera" id="camera">
+                    <option value=""> Select Camera </option>
+                    {% for camera in cameras %}
+                        <option value="{{camera.id}}" {% if camera_id == camera.id %}selected{% endif %}>{{camera.room_details}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+               <label for="">Select Role</label>
+                <select class="form-control" name="role" id="role">
+                    <option value=""> Select Role </option>
+                    {% for role in roles %}
+                        <option value="{{role.id}}" {% if role_id == role.id %}selected{% endif %}>{{role.role_name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+               <label for="">Select Data Type</label>
+                <select class="form-control" name="data_type" id="data_type">
+                    <option value="0" {% if data_type == '0'%}selected{%endif%}>All Time data</option>
+                    <option value="1" {% if data_type == '1'%}selected{%endif%}>Live Data</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <canvas id="moodChart"></canvas>
+            </div>
+            <div class="col-12">
+                <canvas id="activityChart"></canvas>
+            </div>
+        </div>
 
-</div>
+    </div>
+
 {% endblock %}
 
 
 {% block custom-js %}
+
+/******** Mood Chart *********/
+// Get the canvas element by its id
+var ctx = document.getElementById('moodChart').getContext('2d');
+
+// Define your data and configuration
+var data = {
+labels: [{% for mood in mood_detections%}'{{mood.mood_name}}',{% endfor %}],
+datasets: [{
+  label: 'Mood Board',
+  data: [{% for mood in mood_detections%}'{{mood.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var config = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: data,
+};
+
+// Create the chart
+var moodChart = new Chart(ctx, config);
+
+
+/***** Activity Chart *****/
+// Get the canvas element by its id
+var ctxActivityChart = document.getElementById('activityChart').getContext('2d');
+
+// Define your data and configuration
+var dataActivityChart = {
+labels: [{% for activity in activity_detections%}'{{activity.activity_name}}',{% endfor %}],
+datasets: [{
+  label: 'Activity Board',
+  data: [{% for activity in activity_detections%}'{{activity.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var configActivityChart = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: dataActivityChart,
+};
+
+// Create the chart
+var activityChart = new Chart(ctxActivityChart, configActivityChart);
+
+/**** reload page if live data ****/
+function reloadPage() {
+  setTimeout(function() {
+    location.reload();
+  }, 5000); // 30000 milliseconds = 30 seconds
+}
+if ({{data_type}}===1){
+    reloadPage()
+}
+
 {% endblock %}

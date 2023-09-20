@@ -10,6 +10,8 @@ from django.contrib.auth.decorators import login_required
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.models import User
+from mlpipeline.models import Camera, Detection
+from django.db.models import Count, Max
 
 from django.contrib import messages
 
@@ -132,6 +134,28 @@ def profile(request, profile_id=None):
     user_id = request.user.id
     roles = orphanageRoles.objects.all()
     if request.method == 'GET':
+        search_data={}
+        cameras = Camera.objects.filter(connected=True).values('id','room_details')
+        if request.GET.get('camera'):
+            search_data['camera_id'] = request.GET.get('camera')
+        if request.GET.get('role'):
+            search_data['profile__role_id'] = request.GET.get('role')
+        camera_id = int(search_data['camera_id']) if 'camera_id' in search_data.keys() else None
+        role_id = int(search_data['profile__role_id']) if 'profile__role_id' in search_data.keys() else None
+        mood_detections = Detection.objects.filter(profile__user_id=user_id, **search_data).values('mood_name').annotate(counts=Count('mood_name'))
+        activity_detections = Detection.objects.filter(profile__user_id=user_id, **search_data).values('activity_name').annotate(counts=Count('activity_name'))
+        latest_recorded_date = (
+            Detection.objects
+            .filter(profile__user__id=user_id)  # Assuming 'profile' is a ForeignKey to another model with a ForeignKey to 'User'
+            .aggregate(max_recorded_date=Max('recorded_date'))
+            .get('max_recorded_date')
+        )
+
+        current_state = Detection.objects.filter(
+            profile__user__id=user_id,  # Assuming 'profile' is a ForeignKey to another model with a ForeignKey to 'User'
+            recorded_date=latest_recorded_date
+        ).order_by('-recorded_date')[:1]
+
         if profile_id:
             try:
                 profiledtls = Profile.objects.get(id=profile_id)
@@ -148,6 +172,12 @@ def profile(request, profile_id=None):
                                                             'profiledtls':profiledtls,
                                                             'roles':roles,
                                                             'user_create':user_create,
+                                                            'cameras':cameras,
+                                                            'current_state':current_state,
+                                                            'mood_detections':mood_detections,
+                                                            'activity_detections':activity_detections,
+                                                            'camera_id':camera_id,
+                                                            'role_id':role_id,
                                                               })
     if request.method == 'POST':
         if request.POST.get('role') == '#' and request.POST.get('new_role'):
