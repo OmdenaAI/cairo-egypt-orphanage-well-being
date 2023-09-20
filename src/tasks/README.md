@@ -13,4 +13,13 @@ Note : Please Follow the below guidelines to create task folders
 |-|-|-|
 |1|         |         |
 |2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
-|3|         |         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+|2|Human Detection System        | Create human detection system using advanced AI algorithms to accurately identify and track individuals in real-time.         |
+
