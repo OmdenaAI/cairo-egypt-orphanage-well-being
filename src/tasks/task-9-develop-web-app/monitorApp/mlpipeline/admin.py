@@ -7,14 +7,13 @@ from .models import Camera, Detection
 
 # Camera admin
 class CameraAdmin(admin.ModelAdmin):
-    list_display = ('camera_number', 'room_details', 'connected')
-    search_fields = ('camera_number', 'room_details')
+    list_display = ('camera_ip', 'room_details', 'connected')
+    search_fields = ('camera_ip', 'room_details')
 
 # Detection admin
 class DetectionAdmin(admin.ModelAdmin):
-    list_display = ('profile', 'profile_name', 'profile_role', 'camera', 'mood_name', 'activity_name', 'recorded_date')
-    search_fields = ('profile__user__username', 'profile_name', 'camera__camera_number', 'mood_name', 'activity_name')
-    readonly_fields = ('profile_name', 'profile_role',)
+    list_display = ('profile', 'camera', 'mood_name', 'activity_name', 'recorded_date')
+    search_fields = ('profile__user__username','profile__profile_name', 'camera__camera_ip', 'mood_name', 'activity_name')
 
 admin.site.register(Camera, CameraAdmin)
 admin.site.register(Detection, DetectionAdmin)

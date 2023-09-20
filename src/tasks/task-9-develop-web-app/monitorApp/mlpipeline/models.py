@@ -7,7 +7,7 @@ from userProfile.models import Profile
 
 # Camera model
 class Camera(models.Model):
-    camera_number = models.CharField(max_length=128, verbose_name="Camera Number")
+    camera_ip = models.CharField(max_length=128, verbose_name="Camera Number")
     room_details = models.CharField(max_length=128, verbose_name="Room Details")
     connected = models.BooleanField(default=False, verbose_name="Connected")
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="cameras_created_by")
@@ -16,7 +16,7 @@ class Camera(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.camera_number
+        return self.room_details
 
     class Meta:
         verbose_name_plural = "Cameras"
@@ -24,8 +24,6 @@ class Camera(models.Model):
 # Detection model
 class Detection(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, verbose_name="Profile")
-    profile_name = models.CharField(max_length=128, verbose_name="Profile Name")
-    profile_role = models.CharField(max_length=128, verbose_name='Profile Role')
     camera = models.ForeignKey(Camera, on_delete=models.CASCADE, verbose_name="Camera")
     mood_name = models.CharField(max_length=128, verbose_name="Profile Name")
     activity_name = models.CharField(max_length=128, verbose_name="Profile Name")
@@ -33,13 +31,29 @@ class Detection(models.Model):
     recorded_date = models.DateTimeField()
 
     def __str__(self):
-        return f"{self.profile_name} - {self.recorded_date}"
+        return f"{self.profile.profile_name} - {self.recorded_date}"
 
     class Meta:
         verbose_name_plural = "Detections"
 
-# Signal to update profile_name, mood_name, activity_name in Detection model based on profile
-@receiver(pre_save, sender=Detection)
-def update_profile_name(sender, instance, **kwargs):
-    instance.profile_name = instance.profile.profile_name
-    instance.profile_role = instance.profile.role.role_name
+class ScriptExecutions(models.Model):
+    exec_start_time = models.DateTimeField(auto_now_add=True,auto_now=False)
+    exec_status = models.CharField(max_length=128, verbose_name="Script Execution Status")
+    exec_stop_time = models.DateTimeField(blank=True, null=True)
+    exec_camera = models.ForeignKey(Camera, on_delete=models.SET_NULL, null=True, related_name="Camera")
+
+    def __str__(self):
+        return f"Script started {self.exec_start_time} is currently {self.exec_status}"
+
+    class Meta:
+        verbose_name_plural = "Script Executions"
+
+class VideoUpload(models.Model):
+    title = models.CharField(max_length=255)
+    video_file = models.FileField(upload_to='videos/')  
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name_plural = "Uploaded Videos"
