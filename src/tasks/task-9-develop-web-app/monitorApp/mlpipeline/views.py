@@ -179,12 +179,12 @@ def view_result(request, camera_id, *args, **kwargs):
             while True:
                 stdout_line = process.stdout.readline()
                 if stdout_line:
-                    print("stdout:", stdout_line.decode().strip())  # Decode from bytes to string
+                    print("\nstdout:", stdout_line.decode().strip())  # Decode from bytes to string
 
                 # Read a line from stderr
                 stderr_line = process.stderr.readline()
                 if stderr_line:
-                    print("stderr:", stderr_line.decode().strip())  # Decode from bytes to string
+                    print("\nstderr:", stderr_line.decode().strip())  # Decode from bytes to string
 
                 # output, errors = process.communicate()
                 output = process.stdout.read(1024) 
