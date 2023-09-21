@@ -89,7 +89,11 @@ def main(config):
     orphanage_enhancer = EnhancingOrphanage(person_detector, deepsort_tracker, face_detector, emotion_detector, face_recognizer, action_recognizer)
 
     # Start real-time inference with specified input source and settings
-    orphanage_enhancer.realtime_inference(source=config.input, show=config.show, draw_bboxes=config.draw_bboxes, web_app=config.web_app)
+    for frame in orphanage_enhancer.realtime_inference(source=config.input, web_app=config.web_app, show=config.show, draw_bboxes=config.draw_bboxes):
+        try:
+            print(frame, "frame from main.py")          
+        except Exception as e:
+            print(e)
 
 if __name__ == "__main__":
         load_project_files()

@@ -10,7 +10,7 @@ from utils.emotion_detection import EmotionDetector
 from utils.person import Person, People
 from utils.face_recognition import FacialRecognition
 import logging
-from utils.database_utils import insert_prediction
+from utils.database_utils import insert_prediction, check_script_run_status
 import datetime
 # TODO save predictions correctly in the database
 # TODO Upload Video functionality
@@ -268,7 +268,7 @@ class EnhancingOrphanage:
         for id, person in people.items():
             self.plot_one_person(person, id, frame)
 
-    def realtime_inference(self, source, show=True, draw_bboxes=True, save_database=True, web_app=False):
+    def realtime_inference(self, source, web_app=False, show=True, draw_bboxes=True, save_database=True):
         """
         Perform real-time video analysis.
 
@@ -280,7 +280,7 @@ class EnhancingOrphanage:
         """
         cap = MyVideoCapture(source)
 
-        while not cap.end and self.check_script_run_status(source) == 'Running':
+        while not cap.end and check_script_run_status(source) == 'Running':
             try:
                 ret, frame = cap.read()
                 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -304,6 +304,9 @@ class EnhancingOrphanage:
                     if draw_bboxes and show:
                         self.visualize_results(self.people_stats, frame)
 
+                    if save_database:
+                        self.save_people_database(self.people_stats, source)
+
                     if web_app:
                         yield frame
 
@@ -313,6 +316,7 @@ class EnhancingOrphanage:
                 # Press Q on keyboard to exit
                 if cv2.waitKey(25) & 0xFF == ord('q'):
                     break
+                
             except Exception as e:
                 self.logger.error(f"Error in realtime_inference loop: {str(e)}")
 
@@ -322,56 +326,11 @@ class EnhancingOrphanage:
         # Close all the frames
         cv2.destroyAllWindows()
 
-    def save_people_database(self):
+    def save_people_database(self, source):
         """
           Save the people dictionary into the database.
         """
-        insert_prediction(self.people_stats)
-
-
-    # @contextmanager
-    def database_connection(self):
-        """
-        Create Database connection instance
-        """
-
-        DB_USER = "postgres"
-        DB_PASSWORD = "12345"
-        DB_HOST = "127.0.0.1"
-        DB_PORT = "5432"
-        DB_NAME = "orphansdb"
-        
-        connection = None  
-        cursor = None
-        
-        try:
-            connection = psycopg2.connect(user=DB_USER, password=DB_PASSWORD,
-                                          host=DB_HOST, port=DB_PORT, database=DB_NAME)
-            cursor = connection.cursor()
-            yield cursor
-        except (Exception, psycopg2.Error) as e:
-            self.logger.error(f"Error in database connection: {str(e)}")
-        finally:
-            if cursor:
-                cursor.close()
-            if connection:
-                connection.close()
-
-    def check_script_run_status(self, source):
-        """
-        Check the database on what is the script running status
-        """
-        with self.database_connection() as cursor:
-            query = f"""
-                SELECT script.exec_status
-                from mlpipeline_scriptexecutions script
-                join mlpipeline_camera cam on script.exec_camera_id=cam.id
-                where camera_ip = '{source}'
-                order by script.exec_start_time desc limit 1;
-            """
-            cursor.execute(query)
-            sql_result = cursor.fetchone()
-        return sql_result[0]
+        insert_prediction(self.people_stats, source)
 
 
 if __name__ == "__main__":
