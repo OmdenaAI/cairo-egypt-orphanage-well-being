@@ -1,0 +1,961 @@
+2023-09-21 12:09:15,257 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2023-09-21 12:34:50,842 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2023-09-22 08:23:05,635 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:06,243 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:06,689 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:07,134 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:07,613 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:08,119 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:08,612 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:09,073 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:09,520 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:10,037 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:10,733 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:11,590 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:12,207 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:12,859 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:13,439 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:14,024 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:14,532 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:15,023 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:15,451 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:16,196 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:16,667 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:17,125 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:17,549 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:18,032 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:22,414 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:23:23,179 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:23,672 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:24,193 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:24,957 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:25,484 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:26,516 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:27,318 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:27,801 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:28,298 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:29,160 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:29,666 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:30,162 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:31,011 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:31,502 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:32,012 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:32,500 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:33,010 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:33,554 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:34,351 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:34,825 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:35,862 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:36,343 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:36,829 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:37,299 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:41,605 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:23:42,164 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:42,940 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:43,419 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:43,943 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:44,434 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:44,883 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:45,448 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:45,936 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:46,421 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:46,922 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:47,736 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:48,614 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:49,475 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:50,040 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:50,544 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:50,938 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:51,323 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:51,716 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:52,144 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:52,556 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:53,218 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:54,034 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:54,513 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:54,928 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:23:59,051 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:23:59,516 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:00,307 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:00,712 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:01,228 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:01,705 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:02,224 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:03,049 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:03,518 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:04,025 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:04,372 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:04,844 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:05,251 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:05,679 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:06,083 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:06,480 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:06,961 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:07,700 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:08,506 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:09,156 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:09,584 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:10,000 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:10,425 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:10,921 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:11,727 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:15,968 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:24:16,409 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:16,912 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:17,467 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:17,924 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:18,719 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:19,225 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:19,729 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:20,475 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:21,023 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:21,584 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:22,066 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:22,569 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:23,129 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:23,624 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:24,492 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:25,295 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:25,779 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:26,595 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:27,061 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:27,874 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:28,353 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:28,795 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:29,266 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:29,749 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:33,914 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:24:34,358 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:34,813 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:35,250 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:35,817 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:36,600 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:37,163 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:37,763 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:38,323 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:38,867 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:39,454 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:40,019 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:40,551 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:40,970 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:41,484 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:42,238 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:42,720 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:43,280 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:44,063 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:44,611 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:45,131 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:45,671 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:46,098 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:46,526 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:46,937 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:51,120 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:24:51,748 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:52,245 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:52,778 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:53,627 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:54,122 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:54,716 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:55,226 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:55,755 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:56,219 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:56,667 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:57,155 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:57,625 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:58,133 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:58,615 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:59,054 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:59,497 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:24:59,905 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:00,315 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:00,732 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:01,271 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:01,724 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:02,183 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:02,714 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:03,264 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:07,436 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:25:07,983 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:08,546 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:09,346 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:10,178 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:10,939 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:11,375 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:11,792 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:12,228 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:12,638 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:13,323 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:13,909 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:14,513 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:15,445 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:16,030 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:16,599 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:17,517 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:18,208 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:18,831 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:19,423 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:20,046 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:20,631 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:21,237 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:21,723 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:22,483 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:27,013 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:25:27,588 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:28,126 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:28,656 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:29,201 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:29,797 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:30,463 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:31,079 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:31,786 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:32,437 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:33,093 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:33,792 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:34,525 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:35,180 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:35,742 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:36,320 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:36,895 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:37,794 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:38,512 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:39,144 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:39,771 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:40,414 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:41,091 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:41,743 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:42,366 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:47,118 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:25:47,708 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:48,261 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:48,806 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:49,358 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:49,913 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:50,803 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:51,641 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:52,219 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:52,854 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:53,451 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:54,092 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:54,776 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:55,704 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:56,301 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:57,363 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:58,059 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:58,947 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:25:59,591 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:00,251 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:00,995 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:01,663 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:02,590 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:03,307 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:04,104 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:08,718 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:26:09,313 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:09,947 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:10,576 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:11,242 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:12,169 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:12,817 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:13,622 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:14,317 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:14,840 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:15,499 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:16,033 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:16,650 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:17,369 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:18,043 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:18,634 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:19,216 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:20,314 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:20,843 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:22,785 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:23,590 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:25,355 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:27,540 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:26:30,555 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:33,628 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:34,373 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:34,798 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:35,213 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:35,919 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:36,448 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:36,920 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:37,386 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:37,842 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:38,339 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:38,805 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:39,639 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:40,573 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:41,233 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:41,789 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:42,368 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:42,858 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:43,318 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:43,725 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:44,134 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:44,603 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:45,034 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:45,442 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:45,905 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:50,121 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:43:50,644 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:51,107 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:51,594 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:52,088 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:52,556 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:53,031 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:53,499 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:54,000 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:54,891 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:55,378 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:43:55,853 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:30,269 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:30,872 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:31,303 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:31,938 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:32,390 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:32,916 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:33,387 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:33,823 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:34,643 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:35,164 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:36,016 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:36,538 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:37,107 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:37,787 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:38,369 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:38,985 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:39,498 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:39,976 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:40,404 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:40,831 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:41,590 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:42,057 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:42,468 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:42,960 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:47,197 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:44:47,706 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:48,180 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:48,667 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:49,129 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:49,615 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:50,083 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:50,558 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:51,022 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:51,507 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:51,992 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:52,464 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:52,931 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:53,411 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:53,875 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:54,351 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:54,832 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:55,296 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:55,820 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:56,299 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:56,768 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:57,263 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:57,741 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:58,216 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:44:58,684 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:02,904 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 08:45:03,457 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:03,945 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:04,420 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:04,916 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:05,400 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:05,837 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:06,379 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:06,841 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:07,309 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:07,813 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:08,280 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:08,772 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:09,255 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:10,068 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:10,713 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:11,099 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:11,491 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:45:12,114 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() takes 2 positional arguments but 3 were given
+2023-09-22 08:48:27,166 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:15:59,164 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:15:59,446 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:15:59,683 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:15:59,921 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:00,154 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:00,388 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:00,625 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:00,864 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:01,097 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:01,334 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:01,567 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:01,806 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:02,040 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:02,272 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:02,509 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:02,743 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:02,976 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:03,210 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:03,443 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:03,677 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:03,915 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:04,148 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:04,395 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:04,633 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:07,461 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:07,696 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:07,928 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:08,165 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:08,407 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:08,644 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:08,885 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:09,125 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:09,364 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:09,602 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:09,844 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:10,079 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:10,320 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:10,562 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:10,800 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:11,034 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:11,267 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:11,507 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:11,745 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:16:11,979 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:06,170 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:06,446 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:06,685 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:06,918 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:07,157 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:07,389 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:07,628 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:07,862 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:08,093 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:08,334 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:08,572 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:08,813 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:09,046 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:09,285 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:09,520 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:09,754 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:09,990 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:10,223 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:10,456 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:10,688 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:10,932 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:11,171 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:11,408 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:11,648 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:14,436 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:14,674 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:14,911 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:15,144 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:15,378 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:15,615 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:15,858 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:16,097 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:16,331 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:16,567 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:16,806 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:17,043 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:17,277 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:17,511 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:17,743 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:17,984 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:18,221 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:18,456 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:18,698 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:18,940 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:19,173 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:19,413 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:19,654 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:19,892 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:32:20,138 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:43,227 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:43,502 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:43,734 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:43,975 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:44,215 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:44,447 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:44,680 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:44,916 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:45,152 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:45,383 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:45,624 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:45,859 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:46,093 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:46,335 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:46,570 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:46,814 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:47,047 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:47,297 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:47,532 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:47,773 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:48,018 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:48,256 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:48,496 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:48,738 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:51,622 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:51,868 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:52,112 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:52,347 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:52,607 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:52,843 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:53,085 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:53,323 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:53,583 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:53,825 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:54,062 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:54,296 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:54,536 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:54,772 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:55,040 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:55,278 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:55,516 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:55,755 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:55,994 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:56,228 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:56,465 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:56,706 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:56,944 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:57,179 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:33:57,417 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:00,161 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:00,395 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:00,636 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:00,876 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:01,114 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:01,352 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:01,587 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:01,827 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:02,065 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:02,304 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:02,546 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:02,782 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:03,016 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:03,260 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:03,497 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:03,738 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:03,975 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:04,210 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:04,445 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:04,680 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:04,917 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:05,151 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:05,386 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:05,623 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:34:05,856 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:04,798 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:05,073 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:05,306 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:05,546 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:05,785 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:06,022 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:06,262 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:06,495 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:06,732 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:06,965 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:07,200 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:07,442 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:07,680 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:07,916 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:08,150 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:08,391 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:08,626 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:08,860 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:09,097 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:09,330 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:09,567 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:09,802 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:10,038 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:10,274 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:13,102 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:13,336 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:13,576 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:13,810 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:14,051 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:14,288 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:14,523 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:14,761 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:14,997 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:15,233 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:15,468 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:15,702 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:15,938 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:16,182 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:16,422 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:16,668 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:16,906 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:17,145 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:17,385 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:17,620 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:17,855 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:18,096 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:18,338 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:18,574 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:18,813 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:21,540 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:21,777 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:22,012 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:22,251 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:22,484 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:22,718 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:22,957 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:23,194 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:23,434 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:23,674 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:23,910 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:24,152 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:24,385 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:24,622 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:24,858 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:25,090 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:25,325 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:25,563 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:25,805 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:26,041 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:26,279 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:26,516 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:26,751 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:26,993 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:27,231 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:30,066 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:30,302 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:30,538 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:30,772 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:31,011 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:31,243 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:31,486 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:31,723 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:31,961 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:32,204 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:32,442 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:32,685 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:32,920 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:33,159 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:33,395 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:33,631 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:33,877 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:34,117 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:34,355 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:34,593 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:34,831 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:35,071 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:35,309 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:35,561 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:35,796 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:38,623 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:38,862 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:39,099 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:39,334 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:39,576 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:39,810 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:40,046 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:40,282 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:40,522 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:40,763 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:41,001 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:41,239 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:41,473 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:41,713 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:41,949 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:42,185 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:42,424 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:42,665 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:42,903 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:43,140 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:43,377 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:43,612 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:43,851 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:44,091 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:44,329 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:47,134 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:47,369 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:47,607 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:47,845 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:48,082 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:48,323 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:48,559 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:48,799 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:49,037 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:49,275 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:49,518 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:49,758 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:49,994 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:50,296 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:50,548 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:50,785 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:51,020 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:51,255 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:51,500 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:51,738 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:51,979 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:52,225 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:52,484 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:52,738 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:52,981 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:55,757 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:55,999 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:56,242 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:56,477 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:37:56,713 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:32,591 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:32,864 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:33,104 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:33,345 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:33,582 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:33,814 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:34,049 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:34,284 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:34,521 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:34,757 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:34,998 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:35,231 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:35,470 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:35,704 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:35,939 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:36,174 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:36,407 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:36,642 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:36,880 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:37,117 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:37,354 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:37,587 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:37,820 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:38,053 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:40,814 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:41,050 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:41,284 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:41,516 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:41,759 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:41,997 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:42,237 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:42,471 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:42,706 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:42,940 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:39:43,174 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:03,042 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:03,317 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:03,550 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:03,787 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:04,026 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:04,266 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:04,498 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:04,733 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:04,973 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:05,207 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:05,442 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:05,685 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:05,919 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:06,170 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:06,405 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:06,643 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:06,880 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:07,113 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:07,347 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:07,582 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:07,824 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:08,064 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:08,298 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:08,534 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:11,287 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:11,525 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:11,771 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:12,010 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:12,245 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:12,482 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:12,717 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:12,956 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:13,194 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:13,429 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:13,663 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:13,904 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:14,140 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:14,382 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:14,617 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:14,860 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:15,098 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:15,336 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:15,572 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:15,808 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:16,045 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:16,283 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:16,518 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:16,758 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:17,003 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:19,785 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:20,026 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:20,264 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:20,506 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:20,748 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:20,992 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:21,236 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:21,474 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:21,725 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:21,979 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:22,221 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:22,456 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:22,696 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:22,937 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:23,177 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:23,416 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:23,653 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:23,889 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:24,126 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:24,367 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:24,609 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:24,846 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:41:25,094 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:54,572 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:54,952 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:55,269 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:55,545 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:55,832 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:56,109 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:56,389 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:56,667 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:56,946 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:57,221 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:57,506 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:57,782 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:58,054 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:58,310 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:58,574 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:58,809 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:59,070 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:59,325 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:59,562 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:42:59,801 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:00,056 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:00,315 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:00,572 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:00,805 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:03,607 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:03,850 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:04,090 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:04,353 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:04,612 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:04,848 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:05,091 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:05,329 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:05,573 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:05,808 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:06,049 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:06,288 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:06,524 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:06,766 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:07,015 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:07,262 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:07,498 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:07,738 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:07,977 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:08,216 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:08,461 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:08,700 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:08,939 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:09,179 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:09,414 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:49,256 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:49,532 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:49,766 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:50,005 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:50,235 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:50,470 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:50,704 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:50,938 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:51,177 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:51,410 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:51,643 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:51,876 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:52,110 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:52,347 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:52,582 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:52,817 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:53,053 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:53,291 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:53,531 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:53,765 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:54,004 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:54,242 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:54,478 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:54,713 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:57,504 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:57,745 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:57,983 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:58,241 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:58,482 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:58,721 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:58,959 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:59,205 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:59,441 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:59,677 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:43:59,923 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:00,159 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:00,406 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:00,640 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:00,875 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:01,115 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:01,351 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:01,595 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:01,832 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:02,076 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:02,313 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:02,548 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:02,787 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:03,029 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:03,265 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:06,041 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:06,288 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:06,525 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:06,769 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:07,010 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:07,252 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:07,486 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:07,728 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:07,972 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:08,211 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:08,453 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:08,693 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:08,930 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:09,167 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:09,407 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:09,645 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:09,881 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:10,127 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:10,372 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:10,612 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:10,847 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:11,085 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:11,321 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:11,558 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:11,798 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:14,568 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:14,807 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:15,047 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:15,283 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:15,518 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:15,753 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:15,992 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:16,232 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:16,470 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:16,708 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:16,948 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:17,193 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:17,428 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:17,667 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 09:44:17,905 - ERROR - Error in realtime_inference loop: EnhancingOrphanage.save_people_database() missing 1 required positional argument: 'source'
+2023-09-22 10:04:50,531 - ERROR - Error in recognize_action: 'NoneType' object has no attribute 'items'
+2023-09-22 11:13:53,148 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2023-09-22 11:31:41,895 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2023-09-22 14:08:35,916 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2023-09-22 18:23:13,459 - ERROR - Error in recognize_action: 'NoneType' object has no attribute 'items'
+2023-09-22 18:23:21,345 - ERROR - Error in recognize_action: 'NoneType' object has no attribute 'items'
+2023-09-23 09:47:09,038 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2023-09-23 09:48:24,548 - ERROR - Error in realtime_inference loop: OpenCV(4.8.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
