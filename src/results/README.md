@@ -128,35 +128,11 @@ You can access various pages of the app using the following URLs:
     - Path: `/new_camera/`
     - Functionality: Add a new camera.
 
-4. **Delete Camera:** To delete a camera, you can use a URL like [http://127.0.0.1:8000/delete_camera/1/](http://127.0.0.1:8000/delete_camera/1/) (replace `1` with the camera ID).
-    - Path: `/delete_camera/<int:camera_id>/`
-    - Functionality: Delete a specific camera.
-
-5. **Edit Camera:** To edit a camera, you can use a URL like [http://127.0.0.1:8000/edit_camera/1/](http://127.0.0.1:8000/edit_camera/1/) (replace `1` with the camera ID).
-    - Path: `/edit_camera/<int:camera_id>/`
-    - Functionality: Edit a specific camera.
-
-6. **Live Camera:** [http://127.0.0.1:8000/livecamera/](http://127.0.0.1:8000/livecamera/)
-    - Path: `/livecamera/`
-    - Functionality: View live camera feeds.
-
-7. **ML Script:** [http://127.0.0.1:8000/mlscript/](http://127.0.0.1:8000/mlscript/)
+4. **ML Script:** [http://127.0.0.1:8000/mlscript/](http://127.0.0.1:8000/mlscript/)
     - Path: `/mlscript/`
     - Functionality: Access machine learning script.
 
-8. **Start Script:** [http://127.0.0.1:8000/startscript/](http://127.0.0.1:8000/startscript/)
-    - Path: `/startscript/`
-    - Functionality: Start a script.
-
-9. **Stop Script:** [http://127.0.0.1:8000/stopscript/](http://127.0.0.1:8000/stopscript/)
-    - Path: `/stopscript/`
-    - Functionality: Stop a script.
-
-10. **Stop Script At:** To stop a script at a specific execution, you can use a URL like [http://127.0.0.1:8000/stop_script_at/1/](http://127.0.0.1:8000/stop_script_at/1/) (replace `1` with the execution ID).
-    - Path: `/stop_script_at/<int:execution_id>/`
-    - Functionality: Stop a script at a specific execution.
-
-11. **Upload:** [http://127.0.0.1:8000/upload/](http://127.0.0.1:8000/upload/)
+5. **Upload:** [http://127.0.0.1:8000/upload/](http://127.0.0.1:8000/upload/)
     - Path: `/upload/`
     - Functionality: Upload videos for inference.
 
