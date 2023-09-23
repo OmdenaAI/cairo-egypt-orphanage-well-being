@@ -2,3 +2,11 @@ Django==4.2.4
 django-import-export==3.2.0
 psycopg2==2.9.7
 Pillow==10.0.0
+gdown==4.7.1
+torch==2.0.1+cu117
+pytorchvideo==0.1.5
+numpy==1.23.5
+ultralytics==8.0.171
+facenet-pytorch==2.5.3
+psycopg2==2.9.7
+opencv-python==4.8.0.76
