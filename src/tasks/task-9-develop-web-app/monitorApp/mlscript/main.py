@@ -13,6 +13,8 @@ import zipfile
 
 
 
+
+
 files = {
     "orphansdb.sql": "https://drive.google.com/uc?id=1wm0JRQBFPvxnoVs05thokl43xrSiB5av&export=download",
     "project_assets.zip": "https://drive.google.com/uc?id=1FQdCb7FelYbC8ABlE1C6EzwBdHEuijAl&export=download",
@@ -88,15 +90,10 @@ def main(config):
     # Create an instance of EnhancingOrphanage with all initialized components
     orphanage_enhancer = EnhancingOrphanage(person_detector, deepsort_tracker, face_detector, emotion_detector, face_recognizer, action_recognizer)
 
-    # Start real-time inference with specified input source and settings
-    for frame in orphanage_enhancer.realtime_inference(source=config.input, web_app=config.web_app, show=config.show, draw_bboxes=config.draw_bboxes):
-        try:
-            print(frame, "frame from main.py")          
-        except Exception as e:
-            print(e)
+    orphanage_enhancer.realtime_inference(source=config.input, show=config.show, draw_bboxes=config.draw_bboxes)
 
 if __name__ == "__main__":
-        load_project_files()
+        # load_project_files()
         # Parse command-line arguments
         parser = argparse.ArgumentParser(description='Real-time video analysis for enhancing an orphanage environment.')
         parser.add_argument('--input', type=str, default=0,
@@ -104,9 +101,7 @@ if __name__ == "__main__":
         parser.add_argument('--show', type=bool, default=True,
                             help='Display the video feed. Default: True')
         parser.add_argument('--draw_bboxes', type=bool, default=True,
-                            help='Draw bounding boxes on the frame. Default: True')
-        parser.add_argument('--web_app', type=bool, default=False,
-                            help='Display result on web application Default: False')        
+                            help='Draw bounding boxes on the frame. Default: True')      
         configuration = parser.parse_args()
 
         # Call the main function with the parsed configuration

@@ -10,8 +10,9 @@ from utils.emotion_detection import EmotionDetector
 from utils.person import Person, People
 from utils.face_recognition import FacialRecognition
 import logging
-from utils.database_utils import insert_prediction, check_script_run_status
-import datetime
+from utils.database_utils import check_script_run_status, insert_into_database
+
+
 # TODO save predictions correctly in the database
 # TODO Upload Video functionality
 # TODO find a correct way to clear untracked predictions
@@ -268,7 +269,7 @@ class EnhancingOrphanage:
         for id, person in people.items():
             self.plot_one_person(person, id, frame)
 
-    def realtime_inference(self, source, web_app=False, show=True, draw_bboxes=True, save_database=True):
+    def realtime_inference(self, source, show=True, draw_bboxes=True, save_database=True):
         """
         Perform real-time video analysis.
 
@@ -279,7 +280,7 @@ class EnhancingOrphanage:
             save_database: Flag to save the people database into a database.
         """
         cap = MyVideoCapture(source)
-
+        #
         while not cap.end and check_script_run_status(source) == 'Running':
             try:
                 ret, frame = cap.read()
@@ -296,19 +297,13 @@ class EnhancingOrphanage:
 
                     if len(cap.stack) == 25:
                         self.recognize_action(cap, results)
-                        # if save_database:
-                        self.save_people_database()
+                        if save_database:
+                            self.save_people_database()
 
                     self.remove_untracked_people(results)
 
                     if draw_bboxes and show:
                         self.visualize_results(self.people_stats, frame)
-
-                    if save_database:
-                        self.save_people_database(self.people_stats, source)
-
-                    if web_app:
-                        yield frame
 
                     if show:
                         cv2.imshow('Frame', frame)
@@ -316,7 +311,7 @@ class EnhancingOrphanage:
                 # Press Q on keyboard to exit
                 if cv2.waitKey(25) & 0xFF == ord('q'):
                     break
-                
+
             except Exception as e:
                 self.logger.error(f"Error in realtime_inference loop: {str(e)}")
 
@@ -326,11 +321,11 @@ class EnhancingOrphanage:
         # Close all the frames
         cv2.destroyAllWindows()
 
-    def save_people_database(self, source):
+    def save_people_database(self):
         """
           Save the people dictionary into the database.
         """
-        insert_prediction(self.people_stats, source)
+        insert_into_database(self.people_stats)
 
 
 if __name__ == "__main__":
@@ -345,7 +340,7 @@ if __name__ == "__main__":
 
     action_recognizer = AvaInference(device)
     final = EnhancingOrphanage(person_detector, deepsort_tracker, face_detector, emotion_detector, face_recognizer,
-                              action_recognizer)
+                               action_recognizer)
 
     src = "project_assets/videos/Video2_chunk_2.mp4"
     final.realtime_inference(src)
