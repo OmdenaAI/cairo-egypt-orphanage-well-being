@@ -1,0 +1,111 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+{% block dashboard %}active{% endblock %}
+
+{% block content %}
+<div class="page_body">
+    <div class="container">
+        <form action="{% url 'mlpipeline:dashboard' %}" method="GET">{%csrf_token%}
+        <div class="row">
+            <div class="col-md-3">
+               <label for="">Select Camera</label>
+                <select class="form-control" name="camera" id="camera">
+                    <option value=""> Select Camera </option>
+                    {% for camera in cameras %}
+                        <option value="{{camera.id}}" {% if camera_id == camera.id %}selected{% endif %}>{{camera.room_details}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+               <label for="">Select Role</label>
+                <select class="form-control" name="role" id="role">
+                    <option value=""> Select Role </option>
+                    {% for role in roles %}
+                        <option value="{{role.id}}" {% if role_id == role.id %}selected{% endif %}>{{role.role_name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+               <label for="">Select Data Type</label>
+                <select class="form-control" name="data_type" id="data_type">
+                    <option value="0" {% if data_type == '0'%}selected{%endif%}>All Time data</option>
+                    <option value="1" {% if data_type == '1'%}selected{%endif%}>Live Data</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <canvas id="moodChart"></canvas>
+            </div>
+            <div class="col-12">
+                <canvas id="activityChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+
+{% block custom-js %}
+
+/******** Mood Chart *********/
+// Get the canvas element by its id
+var ctx = document.getElementById('moodChart').getContext('2d');
+
+// Define your data and configuration
+var data = {
+labels: [{% for mood in mood_detections%}'{{mood.mood_name}}',{% endfor %}],
+datasets: [{
+  label: 'Mood Board',
+  data: [{% for mood in mood_detections%}'{{mood.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var config = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: data,
+};
+
+// Create the chart
+var moodChart = new Chart(ctx, config);
+
+
+/***** Activity Chart *****/
+// Get the canvas element by its id
+var ctxActivityChart = document.getElementById('activityChart').getContext('2d');
+
+// Define your data and configuration
+var dataActivityChart = {
+labels: [{% for activity in activity_detections%}'{{activity.activity_name}}',{% endfor %}],
+datasets: [{
+  label: 'Activity Board',
+  data: [{% for activity in activity_detections%}'{{activity.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var configActivityChart = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: dataActivityChart,
+};
+
+// Create the chart
+var activityChart = new Chart(ctxActivityChart, configActivityChart);
+
+/**** reload page if live data ****/
+function reloadPage() {
+  setTimeout(function() {
+    location.reload();
+  }, 5000); // 30000 milliseconds = 30 seconds
+}
+if ({{data_type}}===1){
+    reloadPage()
+}
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 justify-content-start d-flex">
+                <button type="button" class="btn btn-primary font_16 fw-bold m-3 mb-5" onclick="window.location='{% url 'mlpipeline:video_inference_upload' %}'">Run Inference on Video File</button>
+            </div>
+            <div class="col-12 justify-content-start d-flex">
+                <h6>Script started at {{executions.first.exec_start_time|date:"h:i A - d/m/Y"}} is currently {{executions.first.exec_status}}</h6>
+            </div>
+            <div class="col-12 justify-content-start d-flex">
+                <button type="button" class="btn btn-primary font_16 fw-bold m-3" onclick="window.location='{% url 'mlpipeline:start_script' %}'">Start Script</button>
+                <button type="button" class="btn btn-primary font_16 fw-bold m-3" onclick="window.location='{% url 'mlpipeline:stop_script' %}'">Stop All Scripts</button>
+            </div>
+            <div class="col-12">
+                <h6 class="font_20 fw-bold">Script Run Log:</h6>
+            </div>
+            {% for execution in executions %}
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-text">
+                            <div class="profile-name">Execution Status: {{execution.exec_status}}</div>
+                            <div>Source ID: {{execution.exec_camera_id}}</div>
+                            <div class="profile-dob">Execution Start Time: {{execution.exec_start_time|date:"h:i A - d/m/Y"}}</div>
+                            <div class="profile-role">Execution Stop Time: {{execution.exec_stop_time|date:"h:i A - d/m/Y"}}</div>
+                        </div>
+                        {% if execution.exec_status == 'Running' %}
+                        <button type="button" class="btn btn-primary font_16 fw-bold m-3"
+                         onclick="window.location='{% url 'mlpipeline:stop_script_at' execution.id %}'">Stop Script</button>
+                         {% else %}
+                        <button type="button" class="btn btn-primary font_16 fw-bold m-3"
+                         disabled >Script Stopped</button>                         
+                         {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

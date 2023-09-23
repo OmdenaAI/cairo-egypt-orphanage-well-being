@@ -1,0 +1,234 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <form class="row login_form p-0" action="{% url 'userProfile:profile' %}" method="post" id="profile_form" name="profile_form" enctype="multipart/form-data">{% csrf_token %}
+        <input type="hidden" name="user_create" value="{{user_create}}">
+        <div class="col-md-3 myprofile-border myprofile_pass_form">
+            <div class="mtop_16">
+                {% if user_create == 1 %}
+                    <h1 class="font_16 fw-bold mtop_16">{{request.user.first_name}} {{request.user.last_name}}</h1>
+                {% endif %}
+                <label for="profile_pic1" class="drag-drop mt-4"><span class="browse-text">Update Profile Picture 1</span></label>
+                <input type="file" class="profile_pic" id="profile_pic1" name="profile_pic1" accept=".png, .jpg, .svg">
+                <div class="thumbnail-container">
+                  <img class="thumbnail" id="thumbnail1" alt="Thumbnail Preview" {% if profiledtls.profile_photo1 %}src="{{profiledtls.profile_photo1.url}}"{% else %} src="#" style="display: none;"{% endif %}>
+                </div>
+
+                <label for="profile_pic2" class="drag-drop mt-4"><span class="browse-text">Update Profile Picture 2</span></label>
+                <input type="file" class="profile_pic" id="profile_pic2" name="profile_pic2" accept=".png, .jpg, .svg">
+                <div class="thumbnail-container">
+                  <img class="thumbnail" id="thumbnail2" alt="Thumbnail Preview" {% if profiledtls.profile_photo2 %}src="{{profiledtls.profile_photo2.url}}"{% else %} src="#" style="display: none;"{% endif %}>
+                </div>
+
+                <label for="profile_pic3" class="drag-drop mt-4"><span class="browse-text">Update Profile Picture 3</span></label>
+                <input type="file" class="profile_pic" id="profile_pic3" name="profile_pic3" accept=".png, .jpg, .svg">
+                <div class="thumbnail-container">
+                  <img class="thumbnail" id="thumbnail3" alt="Thumbnail Preview" {% if profiledtls.profile_photo3 %}src="{{profiledtls.profile_photo3.url}}"{% else %} src="#" style="display: none;"{% endif %}>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 Account-Settings myprofile_pass_form">
+            <h2 class="font_20 fw-semi mb_25 dark_black">Account Settings</h2>
+            <div class="row">
+                <div class="col-md-6 info-inputfield">
+                    {% if user_create %}
+                        <div class="logininput-field mb_21">
+                            <label for="">First Name</label>
+                            <input type="Text" class="form-control" value="{{request.user.first_name}}" id="first_name" name="first_name">
+                        </div>
+                    {% endif %}
+                    <div class="logininput-field mb_21">
+                        <label for="">Display Name</label>
+                        <input type="Text" class="form-control" id="profile_name" name="profile_name" placeholder="Enter Name"
+                        {% if user_create %}value="{{request.user.first_name}} {{request.user.last_name}}"disabled{% else %}
+                        value="{{profiledtls.profile_name}}"{% endif %}>
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Select Role</label>
+                        <select class="form-control" name="role" id="role">
+                            <option value=""> Select Role </option>
+                            {% for role in roles %}
+                                <option value="{{role.id}}" {% if profiledtls.role.id == role.id %}selected{% endif %}>{{role.role_name}}</option>
+                            {% endfor %}
+                            <option value="#">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center mtop_28">
+                        <a class="side-addbutton btn-primary profile_submit" >{% if profiledtls %}Update{% else %}Create{% endif %}</a>
+                        <a class="btn-primary addcolor-cancel side-addbutton" onclick="window.location='{% url 'userProfile:all_profiles' %}'">Cancel</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="font_13 fw-normal mtop_28">Current State: </h3>
+                        {% for state in current_state %}
+                        <h1 class="font_16 fw-bold">{{state.mood_name}}</h1>
+                        <h1 class="font_16 fw-bold">{{state.activity_name}}</h1>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-6 info-inputfield">
+                    {% if user_create %}
+                        <div class="logininput-field mb_21">
+                            <label for="">Last Name</label>
+                            <input type="Text" class="form-control" value="{{request.user.last_name}}" id="last_name" name="last_name">
+                        </div>
+                        <div class="logininput-field mb_21">
+                            <label for="">Email</label>
+                            <input type="Text" class="form-control" value="{{request.user.email}}" id="email" name="email">
+                        </div>
+                    {% endif %}
+                    <div class="logininput-field mb_21 new_role_div" style="display:none;">
+                        <label for="">New Role</label>
+                        <input type="text" name="new_role" placeholder="Enter New Role" id="new_role" class="form-control" autocomplete="off">
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Date Of Birth</label>
+                        <input type="text" name="dob" value="{% if profiledtls %}{{profiledtls.dob|date:"Y-m-d"}}{% endif %}" id="dob" class="form-control form-date" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="container m-5">
+        <form action="{% url 'userProfile:profile' %}" method="GET">{%csrf_token%}
+        <div class="row">
+            <div class="col-md-3">
+               <label for="">Select Camera</label>
+                <select class="form-control" name="camera" id="camera">
+                    <option value=""> Select Camera </option>
+                    {% for camera in cameras %}
+                        <option value="{{camera.id}}" {% if camera_id == camera.id %}selected{% endif %}>{{camera.room_details}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <canvas id="moodChart"></canvas>
+            </div>
+            <div class="col-12">
+                <canvas id="activityChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+
+{% block custom-js %}
+
+/*** Date Picker ***/
+$(".form-date").datetimepicker({
+    format:'Y-m-d',
+    timepicker:false,
+});
+/*** Date Picker ***/
+
+/*** On click of update button to submit form -starts***/
+$(document.body).on('click',".profile_submit",function(){
+    $('#profile_form').submit();
+});
+/*** On click of update button to submit form -ends***/
+
+/*** Field for new role***/
+$(document.body).on('change', "#role", function () {
+    if ($(this).val()=='#'){
+        $('.new_role_div').show();
+    } else {
+        $('.new_role_div').hide();
+    }
+})
+
+/*** Validation for image upload -starts***/
+$(document.body).on('change', ".profile_pic", function () {
+    var fileInput = this;
+    var fileId = $(fileInput).attr('id');
+    var thumbnailId = "#thumbnail" + fileId.substr(fileId.length - 1);
+
+    var file = fileInput.files[0];
+
+    if (file) {
+        var fileSizeInMb = file.size / (1024 * 1024);
+        var allowedExtensions = ['png', 'jpg', 'svg'];
+        var fileExtension = file.name.split('.').pop().toLowerCase();
+
+        if (fileSizeInMb > 2) {
+            alert("File size should not exceed 2MB.");
+            $(thumbnailId).attr('src', '#');
+            $(thumbnailId).hide();
+            return;
+        } else if (!allowedExtensions.includes(fileExtension)) {
+            alert("File type should be png, jpg, or svg.");
+            $(thumbnailId).attr('src', '#');
+            $(thumbnailId).hide();
+            return;
+        }
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $(thumbnailId).attr('src', e.target.result);
+            $(thumbnailId).show();
+        };
+        reader.readAsDataURL(file);
+    } else {
+        $(thumbnailId).attr('src', '#');
+        $(thumbnailId).hide();
+    }
+});
+/*** Validation for image upload -ends***/
+
+
+
+/******** Mood Chart *********/
+// Get the canvas element by its id
+var ctx = document.getElementById('moodChart').getContext('2d');
+
+// Define your data and configuration
+var data = {
+labels: [{% for mood in mood_detections%}'{{mood.mood_name}}',{% endfor %}],
+datasets: [{
+  label: 'Mood Board',
+  data: [{% for mood in mood_detections%}'{{mood.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var config = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: data,
+};
+
+// Create the chart
+var moodChart = new Chart(ctx, config);
+
+
+/***** Activity Chart *****/
+// Get the canvas element by its id
+var ctxActivityChart = document.getElementById('activityChart').getContext('2d');
+
+// Define your data and configuration
+var dataActivityChart = {
+labels: [{% for activity in activity_detections%}'{{activity.activity_name}}',{% endfor %}],
+datasets: [{
+  label: 'Activity Board',
+  data: [{% for activity in activity_detections%}'{{activity.counts}}',{% endfor %}],
+  backgroundColor: ['rgba(255, 84, 62, 0.8)'], // Bar colors
+}]
+};
+
+var configActivityChart = {
+type: 'bar', // Type of chart (bar chart in this case)
+data: dataActivityChart,
+};
+
+// Create the chart
+var activityChart = new Chart(ctxActivityChart, configActivityChart);
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base_after_login.html' %}
+{% load i18n static %}
+
+{% block content %}
+<div class="page_body">
+    <form class="row login_form p-0" action="{% url 'mlpipeline:video_inference_upload' %}" method="post" enctype="multipart/form-data" id="video_form" name="video_form">
+        {% csrf_token %}
+        <div class="Account-Settings myprofile_pass_form">
+            <h2 class="font_20 fw-semi mb_25 dark_black">Upload Video</h2>
+            <div class="row">
+                <div class="col-md-6 info-inputfield">
+                    <div class="logininput-field mb_21">
+                        <label for="">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Enter Video Title">
+                    </div>
+                    <div class="logininput-field mb_21">
+                        <label for="">Video File</label>
+                        <input type="file" class="form-control-file" id="video_file" name="video_file" accept="video/*">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <video controls width="320" height="240" id="uploaded_video">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-6 d-flex align-items-center mtop_28">
+                    <button type="submit" class="side-addbutton btn-primary">Upload</button>
+                    <a href="{% url 'mlpipeline:mlscript' %}" class="btn-primary addcolor-cancel side-addbutton">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block custom-js %}
+<!-- JavaScript to display the uploaded video preview -->
+document.getElementById('video_file').addEventListener('change', function() {
+    const videoFile = this.files[0];
+    const videoElement = document.getElementById('uploaded_video');
+    const titleInput = document.getElementById('title'); // Get the title input element
+
+    if (videoFile) {
+        const videoURL = URL.createObjectURL(videoFile);
+        // Generate a title based on the video file name
+        const videoFileName = videoFile.name;
+        const title = videoFileName.substring(0, videoFileName.lastIndexOf('.')); // Remove file extension if present
+        titleInput.value = title;
+        videoElement.src = videoURL;
+    } else {
+        videoElement.src = '';
+    }
+});
+{% endblock %}
+
