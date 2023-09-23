@@ -112,27 +112,55 @@ Before you dive in, ensure you have the following tools installed and ready:
 
     Behold! This app now lives at [http://127.0.0.1:8000/](http://127.0.0.1:8000/), while the admin realm resides at [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
 
-## Onward and Upward! 🚗
+## Accessing App Pages 🌐
 
-You can create more accounts here [http://127.0.0.1:8000/userProfile/signup/](http://127.0.0.1:8000/userProfile/signup/)
+You can access various pages of the app using the following URLs:
 
-## Completed pages
+1. **Dashboard:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+    - Path: `/`
+    - Functionality: The main dashboard of the application.
 
-1. ` / ` - Dashboard
+2. **Cameras:** [http://127.0.0.1:8000/cameras/](http://127.0.0.1:8000/cameras/)
+    - Path: `/cameras/`
+    - Functionality: View cameras.
 
-2. ` admin/ ` - admin page for superusers
+3. **New Camera:** [http://127.0.0.1:8000/new_camera/](http://127.0.0.1:8000/new_camera/)
+    - Path: `/new_camera/`
+    - Functionality: Add a new camera.
 
-3. ` userProfile/signup ` - create user account
+4. **Delete Camera:** To delete a camera, you can use a URL like [http://127.0.0.1:8000/delete_camera/1/](http://127.0.0.1:8000/delete_camera/1/) (replace `1` with the camera ID).
+    - Path: `/delete_camera/<int:camera_id>/`
+    - Functionality: Delete a specific camera.
 
-4. ` userProfile/login ` - login functionality
+5. **Edit Camera:** To edit a camera, you can use a URL like [http://127.0.0.1:8000/edit_camera/1/](http://127.0.0.1:8000/edit_camera/1/) (replace `1` with the camera ID).
+    - Path: `/edit_camera/<int:camera_id>/`
+    - Functionality: Edit a specific camera.
 
-5. ` userProfile/logout ` - logout functionality
+6. **Live Camera:** [http://127.0.0.1:8000/livecamera/](http://127.0.0.1:8000/livecamera/)
+    - Path: `/livecamera/`
+    - Functionality: View live camera feeds.
 
-6. ` userProfile/change_password ` - change password once logged in
+7. **ML Script:** [http://127.0.0.1:8000/mlscript/](http://127.0.0.1:8000/mlscript/)
+    - Path: `/mlscript/`
+    - Functionality: Access machine learning script.
 
-7. ` userProfile/password_forgot ` - forgot password
+8. **Start Script:** [http://127.0.0.1:8000/startscript/](http://127.0.0.1:8000/startscript/)
+    - Path: `/startscript/`
+    - Functionality: Start a script.
 
-8. ` userProfile/profile ` - CRUD Profile
+9. **Stop Script:** [http://127.0.0.1:8000/stopscript/](http://127.0.0.1:8000/stopscript/)
+    - Path: `/stopscript/`
+    - Functionality: Stop a script.
+
+10. **Stop Script At:** To stop a script at a specific execution, you can use a URL like [http://127.0.0.1:8000/stop_script_at/1/](http://127.0.0.1:8000/stop_script_at/1/) (replace `1` with the execution ID).
+    - Path: `/stop_script_at/<int:execution_id>/`
+    - Functionality: Stop a script at a specific execution.
+
+11. **Upload:** [http://127.0.0.1:8000/upload/](http://127.0.0.1:8000/upload/)
+    - Path: `/upload/`
+    - Functionality: Upload videos for inference.
+
+These URLs allow you to navigate through the different functionalities of the application. Happy exploring!
 
 
 Happy coding and may your code be bug-free! 🚀
